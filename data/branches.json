@@ -945,6 +945,1896 @@
     "officialUrl": "https://local.churchofjesuschrist.org/en/my/sibu/22-jalan-bunga-dahlia-taman-seduan-8"
   },
   {
+    "id": "tw-makung-branch",
+    "name": {
+      "en": "Makung Branch",
+      "zhTw": "馬公支會"
+    },
+    "type": "branch",
+    "language": "mandarin",
+    "status": "active",
+    "location": {
+      "lat": 23.570095,
+      "lng": 119.571767,
+      "address": "3F., No 56-5, Zhong Hua Road, Magong City, Penghu County 88048, Taiwan",
+      "city": "Penghu County",
+      "state": "Taiwan",
+      "postalCode": "",
+      "country": "TW"
+    },
+    "region": "taiwan",
+    "notes": "Chinese address: 台灣澎湖縣馬公市中華路56-5號3樓. Language: Chinese."
+  },
+  {
+    "id": "tw-heng-chun-branch",
+    "name": {
+      "en": "Heng Chun Branch",
+      "zhTw": "恆春支會"
+    },
+    "type": "branch",
+    "language": "mandarin",
+    "status": "active",
+    "location": {
+      "lat": 22.01182,
+      "lng": 120.744237,
+      "address": "No 127, Shengbei Road, Hengchun Township, Pingtung County 94647, Taiwan",
+      "city": "Pingtung County",
+      "state": "Taiwan",
+      "postalCode": "",
+      "country": "TW"
+    },
+    "region": "taiwan",
+    "notes": "Chinese address: 台灣屏東縣恆春鎮勝北路127號. Language: Chinese."
+  },
+  {
+    "id": "tw-taitung-1st-ward",
+    "name": {
+      "en": "Taitung 1st Ward",
+      "zhTw": "台東第一支會"
+    },
+    "type": "ward",
+    "language": "mandarin",
+    "status": "active",
+    "location": {
+      "lat": 22.755926,
+      "lng": 121.138451,
+      "address": "#206, Cheng Chi North Road, Taitung 950, Taiwan",
+      "city": "Taitung City",
+      "state": "Taiwan",
+      "postalCode": "",
+      "country": "TW"
+    },
+    "region": "taiwan",
+    "notes": "Chinese address: 台灣台東市政治北路206號. Language: Chinese."
+  },
+  {
+    "id": "tw-taitung-2nd-ward",
+    "name": {
+      "en": "Taitung 2nd Ward",
+      "zhTw": "台東第二支會"
+    },
+    "type": "ward",
+    "language": "mandarin",
+    "status": "active",
+    "location": {
+      "lat": 22.755926,
+      "lng": 121.138451,
+      "address": "#206, Cheng Chi North Road, Taitung 950, Taiwan",
+      "city": "Taitung City",
+      "state": "Taiwan",
+      "postalCode": "",
+      "country": "TW"
+    },
+    "region": "taiwan",
+    "notes": "Chinese address: 台灣台東市政治北路206號. Language: Chinese."
+  },
+  {
+    "id": "tw-chaochou-ward",
+    "name": {
+      "en": "Chaochou Ward",
+      "zhTw": "潮州支會"
+    },
+    "type": "ward",
+    "language": "mandarin",
+    "status": "active",
+    "location": {
+      "lat": 22.558079,
+      "lng": 120.545636,
+      "address": "No 145, Beimen Road, Chaozhou Township, Pingtung County 92048, Taiwan",
+      "city": "Pingtung County",
+      "state": "Taiwan",
+      "postalCode": "",
+      "country": "TW"
+    },
+    "region": "taiwan",
+    "notes": "Chinese address: 台灣屏東縣潮州鎮北門路145號. Language: Chinese."
+  },
+  {
+    "id": "tw-taliao-ward",
+    "name": {
+      "en": "Taliao Ward",
+      "zhTw": "大寮支會"
+    },
+    "type": "ward",
+    "language": "mandarin",
+    "status": "active",
+    "location": {
+      "lat": 22.602373,
+      "lng": 120.396729,
+      "address": "2F., No. 381, Fenglin 3rd Rd., Daliao Dist., Kaohsiung 83152, Taiwan",
+      "city": "Kaohsiung City",
+      "state": "Taiwan",
+      "postalCode": "",
+      "country": "TW"
+    },
+    "region": "taiwan",
+    "notes": "Chinese address: 台灣高雄市大寮區鳳林三路381號2樓. Language: Chinese."
+  },
+  {
+    "id": "tw-hsiaokang-ward",
+    "name": {
+      "en": "Hsiaokang Ward",
+      "zhTw": "小港支會"
+    },
+    "type": "ward",
+    "language": "mandarin",
+    "status": "active",
+    "location": {
+      "lat": 22.575939,
+      "lng": 120.323718,
+      "address": "No 30, Fodao Road, Qianzhen Dist., Kaohsiung 80668, Taiwan",
+      "city": "Kaohsiung City",
+      "state": "Taiwan",
+      "postalCode": "",
+      "country": "TW"
+    },
+    "region": "taiwan",
+    "notes": "Chinese address: 台灣高雄市前鎮區佛道路30號. Language: Chinese."
+  },
+  {
+    "id": "tw-lingya-ward",
+    "name": {
+      "en": "Lingya Ward",
+      "zhTw": "凌雅支會"
+    },
+    "type": "ward",
+    "language": "mandarin",
+    "status": "active",
+    "location": {
+      "lat": 22.650159,
+      "lng": 120.345454,
+      "address": "No 2, Dehua St., Niaosong Dist. 833172, Taiwan",
+      "city": "Kaohsiung City",
+      "state": "Taiwan",
+      "postalCode": "",
+      "country": "TW"
+    },
+    "region": "taiwan",
+    "notes": "Chinese address: 台灣高雄市鳥松區德化街2號. Language: Chinese."
+  },
+  {
+    "id": "tw-niaosung-ward",
+    "name": {
+      "en": "Niaosung Ward",
+      "zhTw": "鳥松支會"
+    },
+    "type": "ward",
+    "language": "mandarin",
+    "status": "active",
+    "location": {
+      "lat": 22.650159,
+      "lng": 120.345454,
+      "address": "No 2, Dehua St., Niaosong Dist. 833172, Taiwan",
+      "city": "Kaohsiung City",
+      "state": "Taiwan",
+      "postalCode": "",
+      "country": "TW"
+    },
+    "region": "taiwan",
+    "notes": "Chinese address: 台灣高雄市鳥松區德化街2號. Language: Chinese."
+  },
+  {
+    "id": "tw-tsoying-ward",
+    "name": {
+      "en": "Tsoying Ward",
+      "zhTw": "左營支會"
+    },
+    "type": "ward",
+    "language": "mandarin",
+    "status": "active",
+    "location": {
+      "lat": 22.650159,
+      "lng": 120.345454,
+      "address": "No 2, Dehua St., Niaosong Dist. 833172, Taiwan",
+      "city": "Kaohsiung City",
+      "state": "Taiwan",
+      "postalCode": "",
+      "country": "TW"
+    },
+    "region": "taiwan",
+    "notes": "Chinese address: 台灣高雄市鳥松區德化街2號. Language: Chinese."
+  },
+  {
+    "id": "tw-kushan-ward",
+    "name": {
+      "en": "Kushan Ward",
+      "zhTw": "鼓山支會"
+    },
+    "type": "ward",
+    "language": "mandarin",
+    "status": "active",
+    "location": {
+      "lat": 22.632842,
+      "lng": 120.28884,
+      "address": "No 292, Shizhong 1st Road, Qianjin Dist., Kaohsiung 80148, Taiwan",
+      "city": "Kaohsiung City",
+      "state": "Taiwan",
+      "postalCode": "",
+      "country": "TW"
+    },
+    "region": "taiwan",
+    "notes": "Chinese address: 台灣高雄市前金區市中一路292號. Language: Chinese."
+  },
+  {
+    "id": "tw-shuangchien-ward",
+    "name": {
+      "en": "Shuangchien Ward",
+      "zhTw": "雙千支會"
+    },
+    "type": "ward",
+    "language": "mandarin",
+    "status": "active",
+    "location": {
+      "lat": 22.632842,
+      "lng": 120.28884,
+      "address": "No 292, Shizhong 1st Road, Qianjin Dist., Kaohsiung 80148, Taiwan",
+      "city": "Kaohsiung City",
+      "state": "Taiwan",
+      "postalCode": "",
+      "country": "TW"
+    },
+    "region": "taiwan",
+    "notes": "Chinese address: 台灣高雄市前金區市中一路292號. Language: Chinese."
+  },
+  {
+    "id": "tw-nantzu-ward",
+    "name": {
+      "en": "Nantzu Ward",
+      "zhTw": "楠梓支會"
+    },
+    "type": "ward",
+    "language": "mandarin",
+    "status": "active",
+    "location": {
+      "lat": 22.717979,
+      "lng": 120.29635,
+      "address": "No 185, Shoumin Road, Nanzi Dist., Kaohsiung 81152, Taiwan",
+      "city": "Kaohsiung City",
+      "state": "Taiwan",
+      "postalCode": "",
+      "country": "TW"
+    },
+    "region": "taiwan",
+    "notes": "Chinese address: 台灣高雄市楠梓區壽民路185號. Language: Chinese."
+  },
+  {
+    "id": "tw-pingtung-ward",
+    "name": {
+      "en": "Pingtung Ward",
+      "zhTw": "屏東支會"
+    },
+    "type": "ward",
+    "language": "mandarin",
+    "status": "active",
+    "location": {
+      "lat": 22.681844,
+      "lng": 120.501233,
+      "address": "No 60-22, Dalian Road, Pingtung 90059, Taiwan",
+      "city": "Pingtung City",
+      "state": "Taiwan",
+      "postalCode": "",
+      "country": "TW"
+    },
+    "region": "taiwan",
+    "notes": "Chinese address: 台灣屏東市大連路60-22號. Language: Chinese."
+  },
+  {
+    "id": "tw-chishan-branch",
+    "name": {
+      "en": "Chishan Branch",
+      "zhTw": "旗山支會"
+    },
+    "type": "branch",
+    "language": "mandarin",
+    "status": "active",
+    "location": {
+      "lat": 22.881255,
+      "lng": 120.495402,
+      "address": "No 28, Qiping 1st Road, Qishan Dist., Kaohsiung 84244, Taiwan",
+      "city": "Kaohsiung City",
+      "state": "Taiwan",
+      "postalCode": "",
+      "country": "TW"
+    },
+    "region": "taiwan",
+    "notes": "Chinese address: 台灣高雄市旗山區旗平一路28號. Language: Chinese."
+  },
+  {
+    "id": "tw-kangshan-ward",
+    "name": {
+      "en": "Kangshan Ward",
+      "zhTw": "岡山支會"
+    },
+    "type": "ward",
+    "language": "mandarin",
+    "status": "active",
+    "location": {
+      "lat": 22.790205,
+      "lng": 120.296449,
+      "address": "No. 172, Gangshan Rd., Gangshan Dist., Kaohsiung, Taiwan",
+      "city": "Kaohsiung City",
+      "state": "Taiwan",
+      "postalCode": "",
+      "country": "TW"
+    },
+    "region": "taiwan",
+    "notes": "Chinese address: 台灣高雄市岡山區岡山路172號. Language: Chinese."
+  },
+  {
+    "id": "tw-tainan-1st-ward",
+    "name": {
+      "en": "Tainan 1st Ward",
+      "zhTw": "台南第一支會"
+    },
+    "type": "ward",
+    "language": "mandarin",
+    "status": "active",
+    "location": {
+      "lat": 22.977337,
+      "lng": 120.227161,
+      "address": "No 234, Chongshan Road, East Dist., Tainan 70169, Taiwan",
+      "city": "Tainan City",
+      "state": "Taiwan",
+      "postalCode": "",
+      "country": "TW"
+    },
+    "region": "taiwan",
+    "notes": "Chinese address: 台灣台南市東區崇山路234號. Language: Chinese."
+  },
+  {
+    "id": "tw-tainan-2nd-ward",
+    "name": {
+      "en": "Tainan 2nd Ward",
+      "zhTw": "台南第二支會"
+    },
+    "type": "ward",
+    "language": "mandarin",
+    "status": "active",
+    "location": {
+      "lat": 22.977337,
+      "lng": 120.227161,
+      "address": "No 234, Chongshan Road, East Dist., Tainan 70169, Taiwan",
+      "city": "Tainan City",
+      "state": "Taiwan",
+      "postalCode": "",
+      "country": "TW"
+    },
+    "region": "taiwan",
+    "notes": "Chinese address: 台灣台南市東區崇山路234號. Language: Chinese."
+  },
+  {
+    "id": "tw-tainan-3rd-ward",
+    "name": {
+      "en": "Tainan 3rd Ward",
+      "zhTw": "台南第三支會"
+    },
+    "type": "ward",
+    "language": "mandarin",
+    "status": "active",
+    "location": {
+      "lat": 22.999524,
+      "lng": 120.185785,
+      "address": "No 46, Section 4, Minquan Road, West Central Dist., Tainan 70063, Taiwan",
+      "city": "Tainan City",
+      "state": "Taiwan",
+      "postalCode": "",
+      "country": "TW"
+    },
+    "region": "taiwan",
+    "notes": "Chinese address: 台灣台南市中西區民權路四段46號. Language: Chinese."
+  },
+  {
+    "id": "tw-tainan-4th-ward",
+    "name": {
+      "en": "Tainan 4th Ward",
+      "zhTw": "台南第四支會"
+    },
+    "type": "ward",
+    "language": "mandarin",
+    "status": "active",
+    "location": {
+      "lat": 22.999524,
+      "lng": 120.185785,
+      "address": "No 46, Section 4, Minquan Road, West Central Dist., Tainan 70063, Taiwan",
+      "city": "Tainan City",
+      "state": "Taiwan",
+      "postalCode": "",
+      "country": "TW"
+    },
+    "region": "taiwan",
+    "notes": "Chinese address: 台灣台南市中西區民權路四段46號. Language: Chinese."
+  },
+  {
+    "id": "tw-kueijen-ward",
+    "name": {
+      "en": "Kueijen Ward",
+      "zhTw": "歸仁支會"
+    },
+    "type": "ward",
+    "language": "mandarin",
+    "status": "active",
+    "location": {
+      "lat": 23.026392,
+      "lng": 120.253717,
+      "address": "No 57, Yongzheng Road, Yongkang Dist., Tainan 71071, Taiwan",
+      "city": "Tainan City",
+      "state": "Taiwan",
+      "postalCode": "",
+      "country": "TW"
+    },
+    "region": "taiwan",
+    "notes": "Chinese address: 台灣台南市永康區永正路57號. Language: Chinese."
+  },
+  {
+    "id": "tw-yungkang-1st-ward",
+    "name": {
+      "en": "Yungkang 1st Ward",
+      "zhTw": "永康第一支會"
+    },
+    "type": "ward",
+    "language": "mandarin",
+    "status": "active",
+    "location": {
+      "lat": 23.026392,
+      "lng": 120.253717,
+      "address": "No 57, Yongzheng Road, Yongkang Dist., Tainan 71071, Taiwan",
+      "city": "Tainan City",
+      "state": "Taiwan",
+      "postalCode": "",
+      "country": "TW"
+    },
+    "region": "taiwan",
+    "notes": "Chinese address: 台灣台南市永康區永正路57號. Language: Chinese."
+  },
+  {
+    "id": "tw-yungkang-2nd-ward",
+    "name": {
+      "en": "Yungkang 2nd Ward",
+      "zhTw": "永康第二支會"
+    },
+    "type": "ward",
+    "language": "mandarin",
+    "status": "active",
+    "location": {
+      "lat": 23.026392,
+      "lng": 120.253717,
+      "address": "No 57, Yongzheng Road, Yongkang Dist., Tainan 71071, Taiwan",
+      "city": "Tainan City",
+      "state": "Taiwan",
+      "postalCode": "",
+      "country": "TW"
+    },
+    "region": "taiwan",
+    "notes": "Chinese address: 台灣台南市永康區永正路57號. Language: Chinese."
+  },
+  {
+    "id": "tw-hsinying-ward",
+    "name": {
+      "en": "Hsinying Ward",
+      "zhTw": "新營支會"
+    },
+    "type": "ward",
+    "language": "mandarin",
+    "status": "active",
+    "location": {
+      "lat": 23.317921,
+      "lng": 120.308707,
+      "address": "No 207, Sanxing Street, Xinying Dist., Tainan 73050, Taiwan",
+      "city": "Tainan City",
+      "state": "Taiwan",
+      "postalCode": "",
+      "country": "TW"
+    },
+    "region": "taiwan",
+    "notes": "Chinese address: 台灣台南市新營區三興街207號. Language: Chinese."
+  },
+  {
+    "id": "tw-yuli-branch",
+    "name": {
+      "en": "Yuli Branch",
+      "zhTw": "玉里支會"
+    },
+    "type": "branch",
+    "language": "mandarin",
+    "status": "active",
+    "location": {
+      "lat": 23.33271,
+      "lng": 121.316019,
+      "address": "2F, #57 Chung Cheng Road, Yu Li Township, Hualien County 981, Taiwan",
+      "city": "Hualien County",
+      "state": "Taiwan",
+      "postalCode": "",
+      "country": "TW"
+    },
+    "region": "taiwan",
+    "notes": "Chinese address: 台灣花蓮縣玉里鎮中正路57號2樓. Language: Chinese."
+  },
+  {
+    "id": "tw-taipo-branch",
+    "name": {
+      "en": "Taipo Branch",
+      "zhTw": "太保支會"
+    },
+    "type": "branch",
+    "language": "mandarin",
+    "status": "active",
+    "location": {
+      "lat": 23.454225,
+      "lng": 120.297258,
+      "address": "No.195, E. Sec., Xianghe 3rd Road, Taipo City 61249, Taiwan",
+      "city": "Taibao City",
+      "state": "Taiwan",
+      "postalCode": "",
+      "country": "TW"
+    },
+    "region": "taiwan",
+    "notes": "Chinese address: 台灣太保市香和三路東段195號. Language: Chinese."
+  },
+  {
+    "id": "tw-chiayi-ward",
+    "name": {
+      "en": "Chiayi Ward",
+      "zhTw": "嘉義支會"
+    },
+    "type": "ward",
+    "language": "mandarin",
+    "status": "active",
+    "location": {
+      "lat": 23.467802,
+      "lng": 120.442714,
+      "address": "No 125 Renai Rd., West Dist., Chiayi City 60055, Taiwan",
+      "city": "Chiayi City",
+      "state": "Taiwan",
+      "postalCode": "",
+      "country": "TW"
+    },
+    "region": "taiwan",
+    "notes": "Chinese address: 台灣嘉義市西區仁愛路125號. Language: Chinese."
+  },
+  {
+    "id": "tw-minhsiung-ward",
+    "name": {
+      "en": "Minhsiung Ward",
+      "zhTw": "民雄支會"
+    },
+    "type": "ward",
+    "language": "mandarin",
+    "status": "active",
+    "location": {
+      "lat": 23.467802,
+      "lng": 120.442714,
+      "address": "No 125 Renai Rd., West Dist., Chiayi City 60055, Taiwan",
+      "city": "Chiayi City",
+      "state": "Taiwan",
+      "postalCode": "",
+      "country": "TW"
+    },
+    "region": "taiwan",
+    "notes": "Chinese address: 台灣嘉義市西區仁愛路125號. Language: Chinese."
+  },
+  {
+    "id": "tw-huwei-ward",
+    "name": {
+      "en": "Huwei Ward",
+      "zhTw": "虎尾支會"
+    },
+    "type": "ward",
+    "language": "mandarin",
+    "status": "active",
+    "location": {
+      "lat": 23.711408,
+      "lng": 120.533859,
+      "address": "50 Hung-chang Rd, Tou Liu, Yunlin County 640, Taiwan",
+      "city": "Yunlin County",
+      "state": "Taiwan",
+      "postalCode": "",
+      "country": "TW"
+    },
+    "region": "taiwan",
+    "notes": "Chinese address: 台灣雲林縣斗六市洪昌路50號. Language: Chinese."
+  },
+  {
+    "id": "tw-touliu-ward",
+    "name": {
+      "en": "Touliu Ward",
+      "zhTw": "斗六支會"
+    },
+    "type": "ward",
+    "language": "mandarin",
+    "status": "active",
+    "location": {
+      "lat": 23.711408,
+      "lng": 120.533859,
+      "address": "50 Hung-chang Rd, Tou Liu, Yunlin County 640, Taiwan",
+      "city": "Yunlin County",
+      "state": "Taiwan",
+      "postalCode": "",
+      "country": "TW"
+    },
+    "region": "taiwan",
+    "notes": "Chinese address: 台灣雲林縣斗六市洪昌路50號. Language: Chinese."
+  },
+  {
+    "id": "tw-hsi-hu-ward",
+    "name": {
+      "en": "Hsi Hu Ward",
+      "zhTw": "西湖支會"
+    },
+    "type": "ward",
+    "language": "mandarin",
+    "status": "active",
+    "location": {
+      "lat": 23.966039,
+      "lng": 120.475044,
+      "address": "#72, Fukuei St., Hsihu, Chang Hua 51445, Taiwan",
+      "city": "Changhua County",
+      "state": "Taiwan",
+      "postalCode": "",
+      "country": "TW"
+    },
+    "region": "taiwan",
+    "notes": "Chinese address: 台灣彰化縣溪湖鎮福貴街72號. Language: Chinese."
+  },
+  {
+    "id": "tw-chang-hua-1st-ward",
+    "name": {
+      "en": "Chang Hua 1st Ward",
+      "zhTw": "彰化第一支會"
+    },
+    "type": "ward",
+    "language": "mandarin",
+    "status": "active",
+    "location": {
+      "lat": 24.085188,
+      "lng": 120.56042,
+      "address": "#165, Chu-Ho Rd., Chang Hua City 50081, Taiwan",
+      "city": "Changhua City",
+      "state": "Taiwan",
+      "postalCode": "",
+      "country": "TW"
+    },
+    "region": "taiwan",
+    "notes": "Chinese address: 台灣彰化市中和路165號. Language: Chinese."
+  },
+  {
+    "id": "tw-chang-hua-3rd-ward",
+    "name": {
+      "en": "Chang Hua 3rd Ward",
+      "zhTw": "彰化第三支會"
+    },
+    "type": "ward",
+    "language": "mandarin",
+    "status": "active",
+    "location": {
+      "lat": 24.085188,
+      "lng": 120.56042,
+      "address": "#165, Chu-Ho Rd., Chang Hua City 50081, Taiwan",
+      "city": "Changhua City",
+      "state": "Taiwan",
+      "postalCode": "",
+      "country": "TW"
+    },
+    "region": "taiwan",
+    "notes": "Chinese address: 台灣彰化市中和路165號. Language: Chinese."
+  },
+  {
+    "id": "tw-mingchien-branch",
+    "name": {
+      "en": "Mingchien Branch",
+      "zhTw": "名間支會"
+    },
+    "type": "branch",
+    "language": "mandarin",
+    "status": "active",
+    "location": {
+      "lat": 23.946459,
+      "lng": 120.693214,
+      "address": "#220-6, Chung-cheng Rd., Nan Tou County 54046, Taiwan",
+      "city": "Nantou County",
+      "state": "Taiwan",
+      "postalCode": "",
+      "country": "TW"
+    },
+    "region": "taiwan",
+    "notes": "Chinese address: 台灣南投縣南投市中正路220-6號. Language: Chinese."
+  },
+  {
+    "id": "tw-nantou-ward",
+    "name": {
+      "en": "Nantou Ward",
+      "zhTw": "南投支會"
+    },
+    "type": "ward",
+    "language": "mandarin",
+    "status": "active",
+    "location": {
+      "lat": 23.946459,
+      "lng": 120.693214,
+      "address": "#220-6, Chung-cheng Rd., Nan Tou County 54046, Taiwan",
+      "city": "Nantou County",
+      "state": "Taiwan",
+      "postalCode": "",
+      "country": "TW"
+    },
+    "region": "taiwan",
+    "notes": "Chinese address: 台灣南投縣南投市中正路220-6號. Language: Chinese."
+  },
+  {
+    "id": "tw-pu-li-branch",
+    "name": {
+      "en": "Pu Li Branch",
+      "zhTw": "埔里支會"
+    },
+    "type": "branch",
+    "language": "mandarin",
+    "status": "active",
+    "location": {
+      "lat": 23.962636,
+      "lng": 120.960098,
+      "address": "#242 Nan-an Rd., Pu Li, Nan Tou County 545, Taiwan",
+      "city": "Nantou County",
+      "state": "Taiwan",
+      "postalCode": "",
+      "country": "TW"
+    },
+    "region": "taiwan",
+    "notes": "Chinese address: 台灣南投縣埔里鎮南安路242號. Language: Chinese."
+  },
+  {
+    "id": "tw-taiping-ward",
+    "name": {
+      "en": "Taiping Ward",
+      "zhTw": "太平支會"
+    },
+    "type": "ward",
+    "language": "mandarin",
+    "status": "active",
+    "location": {
+      "lat": 24.13475,
+      "lng": 120.705124,
+      "address": "#188, Tungying Rd., E. District, Taichung 401, Taiwan",
+      "city": "Taichung City",
+      "state": "Taiwan",
+      "postalCode": "",
+      "country": "TW"
+    },
+    "region": "taiwan",
+    "notes": "Chinese address: 台灣台中市東區東英路188號. Language: Chinese."
+  },
+  {
+    "id": "tw-takeng-ward",
+    "name": {
+      "en": "Takeng Ward",
+      "zhTw": "大坑支會"
+    },
+    "type": "ward",
+    "language": "mandarin",
+    "status": "active",
+    "location": {
+      "lat": 24.13475,
+      "lng": 120.705124,
+      "address": "#188, Tungying Rd., E. District, Taichung 401, Taiwan",
+      "city": "Taichung City",
+      "state": "Taiwan",
+      "postalCode": "",
+      "country": "TW"
+    },
+    "region": "taiwan",
+    "notes": "Chinese address: 台灣台中市東區東英路188號. Language: Chinese."
+  },
+  {
+    "id": "tw-tungying-ward",
+    "name": {
+      "en": "Tungying Ward",
+      "zhTw": "東英支會"
+    },
+    "type": "ward",
+    "language": "mandarin",
+    "status": "active",
+    "location": {
+      "lat": 24.13475,
+      "lng": 120.705124,
+      "address": "#188, Tungying Rd., E. District, Taichung 401, Taiwan",
+      "city": "Taichung City",
+      "state": "Taiwan",
+      "postalCode": "",
+      "country": "TW"
+    },
+    "region": "taiwan",
+    "notes": "Chinese address: 台灣台中市東區東英路188號. Language: Chinese."
+  },
+  {
+    "id": "tw-wufeng-ward",
+    "name": {
+      "en": "Wufeng Ward",
+      "zhTw": "霧峰支會"
+    },
+    "type": "ward",
+    "language": "mandarin",
+    "status": "active",
+    "location": {
+      "lat": 24.13475,
+      "lng": 120.705124,
+      "address": "#188, Tungying Rd., E. District, Taichung 401, Taiwan",
+      "city": "Taichung City",
+      "state": "Taiwan",
+      "postalCode": "",
+      "country": "TW"
+    },
+    "region": "taiwan",
+    "notes": "Chinese address: 台灣台中市東區東英路188號. Language: Chinese."
+  },
+  {
+    "id": "tw-chungming-ward",
+    "name": {
+      "en": "Chungming Ward",
+      "zhTw": "中明支會"
+    },
+    "type": "ward",
+    "language": "mandarin",
+    "status": "active",
+    "location": {
+      "lat": 24.13407,
+      "lng": 120.649745,
+      "address": "#409, Tatun S. Rd., Nantun Dist., Taichung 40854, Taiwan",
+      "city": "Taichung City",
+      "state": "Taiwan",
+      "postalCode": "",
+      "country": "TW"
+    },
+    "region": "taiwan",
+    "notes": "Chinese address: 台灣台中市南屯區大墩南路409號. Language: Chinese."
+  },
+  {
+    "id": "tw-nantun-ward",
+    "name": {
+      "en": "Nantun Ward",
+      "zhTw": "南屯支會"
+    },
+    "type": "ward",
+    "language": "mandarin",
+    "status": "active",
+    "location": {
+      "lat": 24.13407,
+      "lng": 120.649745,
+      "address": "#409, Tatun S. Rd., Nantun Dist., Taichung 40854, Taiwan",
+      "city": "Taichung City",
+      "state": "Taiwan",
+      "postalCode": "",
+      "country": "TW"
+    },
+    "region": "taiwan",
+    "notes": "Chinese address: 台灣台中市南屯區大墩南路409號. Language: Chinese."
+  },
+  {
+    "id": "tw-xitun-ward",
+    "name": {
+      "en": "Xitun Ward",
+      "zhTw": "西屯支會"
+    },
+    "type": "ward",
+    "language": "mandarin",
+    "status": "active",
+    "location": {
+      "lat": 24.181093,
+      "lng": 120.618553,
+      "address": "19F., No.839/847, Sec. 4, Taiwan Blvd., Taichung 407, Taiwan",
+      "city": "Taichung City",
+      "state": "Taiwan",
+      "postalCode": "",
+      "country": "TW"
+    },
+    "region": "taiwan",
+    "notes": "Chinese address: 台灣台中市台灣大道四段839/847號19樓. Language: Chinese."
+  },
+  {
+    "id": "tw-ta-ya-ward",
+    "name": {
+      "en": "Ta Ya Ward",
+      "zhTw": "大雅支會"
+    },
+    "type": "ward",
+    "language": "mandarin",
+    "status": "active",
+    "location": {
+      "lat": 24.216979,
+      "lng": 120.64953,
+      "address": "#880, Sec. 3, Zhongqing Rd., Daya Dist., Taichung 428, Taiwan",
+      "city": "Taichung City",
+      "state": "Taiwan",
+      "postalCode": "",
+      "country": "TW"
+    },
+    "region": "taiwan",
+    "notes": "Chinese address: 台灣台中市大雅區中清路三段880號. Language: Chinese."
+  },
+  {
+    "id": "tw-tantzu-1st-ward",
+    "name": {
+      "en": "Tantzu 1st Ward",
+      "zhTw": "潭子第一支會"
+    },
+    "type": "ward",
+    "language": "mandarin",
+    "status": "active",
+    "location": {
+      "lat": 24.216979,
+      "lng": 120.64953,
+      "address": "#880, Sec. 3, Zhongqing Rd., Daya Dist., Taichung 428, Taiwan",
+      "city": "Taichung City",
+      "state": "Taiwan",
+      "postalCode": "",
+      "country": "TW"
+    },
+    "region": "taiwan",
+    "notes": "Chinese address: 台灣台中市大雅區中清路三段880號. Language: Chinese."
+  },
+  {
+    "id": "tw-tantzu-2nd-ward",
+    "name": {
+      "en": "Tantzu 2nd Ward",
+      "zhTw": "潭子第二支會"
+    },
+    "type": "ward",
+    "language": "mandarin",
+    "status": "active",
+    "location": {
+      "lat": 24.216979,
+      "lng": 120.64953,
+      "address": "#880, Sec. 3, Zhongqing Rd., Daya Dist., Taichung 428, Taiwan",
+      "city": "Taichung City",
+      "state": "Taiwan",
+      "postalCode": "",
+      "country": "TW"
+    },
+    "region": "taiwan",
+    "notes": "Chinese address: 台灣台中市大雅區中清路三段880號. Language: Chinese."
+  },
+  {
+    "id": "tw-houfeng-ward",
+    "name": {
+      "en": "Houfeng Ward",
+      "zhTw": "后豐支會"
+    },
+    "type": "ward",
+    "language": "mandarin",
+    "status": "active",
+    "location": {
+      "lat": 24.245497,
+      "lng": 120.72442,
+      "address": "#363, Yuan-Huan E. Rd., Feng Yuan District, Taichung 420, Taiwan",
+      "city": "Taichung City",
+      "state": "Taiwan",
+      "postalCode": "",
+      "country": "TW"
+    },
+    "region": "taiwan",
+    "notes": "Chinese address: 台灣台中市豐原區圓環東路363號. Language: Chinese."
+  },
+  {
+    "id": "tw-shalu-ward",
+    "name": {
+      "en": "Shalu Ward",
+      "zhTw": "沙鹿支會"
+    },
+    "type": "ward",
+    "language": "mandarin",
+    "status": "active",
+    "location": {
+      "lat": 24.260816,
+      "lng": 120.554647,
+      "address": "#222, Sec. 2, MinHe Rd., Ching Shui Dist., Taichung 436, Taiwan",
+      "city": "Taichung City",
+      "state": "Taiwan",
+      "postalCode": "",
+      "country": "TW"
+    },
+    "region": "taiwan",
+    "notes": "Chinese address: 台灣台中市清水區民和路二段222號. Language: Chinese."
+  },
+  {
+    "id": "tw-hualien-1st-ward",
+    "name": {
+      "en": "Hualien 1st Ward",
+      "zhTw": "花蓮第一支會"
+    },
+    "type": "ward",
+    "language": "mandarin",
+    "status": "active",
+    "location": {
+      "lat": 23.979513,
+      "lng": 121.586399,
+      "address": "#219, Section 1, Jhongyuan Road, Jian Township, Hualien 973, Taiwan",
+      "city": "Hualien County",
+      "state": "Taiwan",
+      "postalCode": "",
+      "country": "TW"
+    },
+    "region": "taiwan",
+    "notes": "Chinese address: 台灣花蓮縣吉安鄉中原路一段219號. Language: Chinese."
+  },
+  {
+    "id": "tw-hualien-2nd-ward",
+    "name": {
+      "en": "Hualien 2nd Ward",
+      "zhTw": "花蓮第二支會"
+    },
+    "type": "ward",
+    "language": "mandarin",
+    "status": "active",
+    "location": {
+      "lat": 23.979513,
+      "lng": 121.586399,
+      "address": "#219, Section 1, Jhongyuan Road, Jian Township, Hualien 973, Taiwan",
+      "city": "Hualien County",
+      "state": "Taiwan",
+      "postalCode": "",
+      "country": "TW"
+    },
+    "region": "taiwan",
+    "notes": "Chinese address: 台灣花蓮縣吉安鄉中原路一段219號. Language: Chinese."
+  },
+  {
+    "id": "tw-ilan-ward",
+    "name": {
+      "en": "Ilan Ward",
+      "zhTw": "宜蘭支會"
+    },
+    "type": "ward",
+    "language": "mandarin",
+    "status": "active",
+    "location": {
+      "lat": 24.672095,
+      "lng": 121.777246,
+      "address": "#115, Kuang Jung Road, Lo Tung Township, Ilan County 265, Taiwan",
+      "city": "Yilan County",
+      "state": "Taiwan",
+      "postalCode": "",
+      "country": "TW"
+    },
+    "region": "taiwan",
+    "notes": "Chinese address: 台灣宜蘭縣羅東鎮光榮路115號. Language: Chinese."
+  },
+  {
+    "id": "tw-lanyang-branch",
+    "name": {
+      "en": "Lanyang Branch",
+      "zhTw": "蘭陽支會"
+    },
+    "type": "branch",
+    "language": "mandarin",
+    "status": "active",
+    "location": {
+      "lat": 24.752471,
+      "lng": 121.757507,
+      "address": "Room 1-4, No. 426, Section 2, Zhongshan Rd, Yilan City, Taiwan",
+      "city": "Yilan City",
+      "state": "Taiwan",
+      "postalCode": "",
+      "country": "TW"
+    },
+    "region": "taiwan",
+    "notes": "Chinese address: 台灣宜蘭市中山路二段426號1-4室. Language: Chinese."
+  },
+  {
+    "id": "tw-miao-li-ward",
+    "name": {
+      "en": "Miao Li Ward",
+      "zhTw": "苗栗支會"
+    },
+    "type": "ward",
+    "language": "mandarin",
+    "status": "active",
+    "location": {
+      "lat": 24.57725,
+      "lng": 120.815457,
+      "address": "#106, Lane 458, Wen-fa Rd., Miao Li City 360, Taiwan",
+      "city": "Miaoli City",
+      "state": "Taiwan",
+      "postalCode": "",
+      "country": "TW"
+    },
+    "region": "taiwan",
+    "notes": "Chinese address: 台灣苗栗市文發路458巷106號. Language: Chinese."
+  },
+  {
+    "id": "tw-chunan-ward",
+    "name": {
+      "en": "Chunan Ward",
+      "zhTw": "竹南支會"
+    },
+    "type": "ward",
+    "language": "mandarin",
+    "status": "active",
+    "location": {
+      "lat": 24.685447,
+      "lng": 120.859975,
+      "address": "#21-1, 7 Lin, Chung-mei Li, Chu Nan, Miao Li County 350, Taiwan",
+      "city": "Miaoli County",
+      "state": "Taiwan",
+      "postalCode": "",
+      "country": "TW"
+    },
+    "region": "taiwan",
+    "notes": "Chinese address: 台灣苗栗縣竹南鎮中美里7鄰21-1號. Language: Chinese."
+  },
+  {
+    "id": "tw-toufen-ward",
+    "name": {
+      "en": "Toufen Ward",
+      "zhTw": "頭份支會"
+    },
+    "type": "ward",
+    "language": "mandarin",
+    "status": "active",
+    "location": {
+      "lat": 24.686366,
+      "lng": 120.910824,
+      "address": "2F, #206, Chung-cheng Rd., Tou Fen, Miao Li County 351, Taiwan",
+      "city": "Miaoli County",
+      "state": "Taiwan",
+      "postalCode": "",
+      "country": "TW"
+    },
+    "region": "taiwan",
+    "notes": "Chinese address: 台灣苗栗縣頭份市中正路206號2樓. Language: Chinese."
+  },
+  {
+    "id": "tw-chu-tung-ward",
+    "name": {
+      "en": "Chu Tung Ward",
+      "zhTw": "竹東支會"
+    },
+    "type": "ward",
+    "language": "mandarin",
+    "status": "active",
+    "location": {
+      "lat": 24.729254,
+      "lng": 121.090625,
+      "address": "#199, Wen-Lin Rd., Chu Tung, Hsinchu 31045, Taiwan",
+      "city": "Hsinchu County",
+      "state": "Taiwan",
+      "postalCode": "",
+      "country": "TW"
+    },
+    "region": "taiwan",
+    "notes": "Chinese address: 台灣新竹縣竹東鎮文林路199號. Language: Chinese."
+  },
+  {
+    "id": "tw-hsin-chu-1st-ward",
+    "name": {
+      "en": "Hsin Chu 1st Ward",
+      "zhTw": "新竹第一支會"
+    },
+    "type": "ward",
+    "language": "mandarin",
+    "status": "active",
+    "location": {
+      "lat": 24.815284,
+      "lng": 120.979635,
+      "address": "#9, Lane 442, Sec. 1, Ching-kuo Rd., Hsin Chu City, Hsinchu 300, Taiwan",
+      "city": "Hsinchu City",
+      "state": "Taiwan",
+      "postalCode": "",
+      "country": "TW"
+    },
+    "region": "taiwan",
+    "notes": "Chinese address: 台灣新竹市清國路一段442巷9號. Language: Chinese."
+  },
+  {
+    "id": "tw-hsin-chu-3rd-ward",
+    "name": {
+      "en": "Hsin Chu 3rd Ward",
+      "zhTw": "新竹第三支會"
+    },
+    "type": "ward",
+    "language": "mandarin",
+    "status": "active",
+    "location": {
+      "lat": 24.815284,
+      "lng": 120.979635,
+      "address": "#9, Lane 442, Sec. 1, Ching-kuo Rd., Hsin Chu City, Hsinchu 300, Taiwan",
+      "city": "Hsinchu City",
+      "state": "Taiwan",
+      "postalCode": "",
+      "country": "TW"
+    },
+    "region": "taiwan",
+    "notes": "Chinese address: 台灣新竹市清國路一段442巷9號. Language: Chinese."
+  },
+  {
+    "id": "tw-chupei-1st-ward",
+    "name": {
+      "en": "Chupei 1st Ward",
+      "zhTw": "竹北第一支會"
+    },
+    "type": "ward",
+    "language": "mandarin",
+    "status": "active",
+    "location": {
+      "lat": 24.837453,
+      "lng": 121.002447,
+      "address": "#129, Wen-chang St., Chupei City, Hsinchu County 302, Taiwan",
+      "city": "Hsinchu County",
+      "state": "Taiwan",
+      "postalCode": "",
+      "country": "TW"
+    },
+    "region": "taiwan",
+    "notes": "Chinese address: 台灣新竹縣竹北市文昌街129號. Language: Chinese."
+  },
+  {
+    "id": "tw-chupei-2nd-ward",
+    "name": {
+      "en": "Chupei 2nd Ward",
+      "zhTw": "竹北第二支會"
+    },
+    "type": "ward",
+    "language": "mandarin",
+    "status": "active",
+    "location": {
+      "lat": 24.837453,
+      "lng": 121.002447,
+      "address": "#129, Wen-chang St., Chupei City, Hsinchu County 302, Taiwan",
+      "city": "Hsinchu County",
+      "state": "Taiwan",
+      "postalCode": "",
+      "country": "TW"
+    },
+    "region": "taiwan",
+    "notes": "Chinese address: 台灣新竹縣竹北市文昌街129號. Language: Chinese."
+  },
+  {
+    "id": "tw-lungtan-ward",
+    "name": {
+      "en": "Lungtan Ward",
+      "zhTw": "龍潭支會"
+    },
+    "type": "ward",
+    "language": "mandarin",
+    "status": "active",
+    "location": {
+      "lat": 24.85466,
+      "lng": 121.218038,
+      "address": "#530, Lung Hua Road, Lung Tan District 325, Taiwan",
+      "city": "Taoyuan City",
+      "state": "Taiwan",
+      "postalCode": "",
+      "country": "TW"
+    },
+    "region": "taiwan",
+    "notes": "Chinese address: 台灣桃園市龍潭區龍華路530號. Language: Chinese."
+  },
+  {
+    "id": "tw-pate-ward",
+    "name": {
+      "en": "Pate Ward",
+      "zhTw": "八德支會"
+    },
+    "type": "ward",
+    "language": "mandarin",
+    "status": "active",
+    "location": {
+      "lat": 24.924053,
+      "lng": 121.295371,
+      "address": "No.1460, Sec. 2, Jieshou Rd., Bade City 334, Taiwan",
+      "city": "Taoyuan City",
+      "state": "Taiwan",
+      "postalCode": "",
+      "country": "TW"
+    },
+    "region": "taiwan",
+    "notes": "Chinese address: 台灣桃園市八德區介壽路二段1460號. Language: Chinese."
+  },
+  {
+    "id": "tw-chungli-ward",
+    "name": {
+      "en": "Chungli Ward",
+      "zhTw": "中壢支會"
+    },
+    "type": "ward",
+    "language": "mandarin",
+    "status": "active",
+    "location": {
+      "lat": 24.954104,
+      "lng": 121.232554,
+      "address": "#412, Chung Pei Road, Section 2, Chung Li 320, Taiwan",
+      "city": "Taoyuan City",
+      "state": "Taiwan",
+      "postalCode": "",
+      "country": "TW"
+    },
+    "region": "taiwan",
+    "notes": "Chinese address: 台灣桃園市中壢區中北路二段412號. Language: Chinese."
+  },
+  {
+    "id": "tw-kuishan-ward",
+    "name": {
+      "en": "Kuishan Ward",
+      "zhTw": "龜山支會"
+    },
+    "type": "ward",
+    "language": "mandarin",
+    "status": "active",
+    "location": {
+      "lat": 25.017545,
+      "lng": 121.304094,
+      "address": "No.59, Lane 336, Tung An Street 330, Taiwan",
+      "city": "Taoyuan City",
+      "state": "Taiwan",
+      "postalCode": "",
+      "country": "TW"
+    },
+    "region": "taiwan",
+    "notes": "Chinese address: 台灣桃園市蘆竹區同安街336巷59號. Language: Chinese."
+  },
+  {
+    "id": "tw-luzhu-ward",
+    "name": {
+      "en": "Luzhu Ward",
+      "zhTw": "蘆竹支會"
+    },
+    "type": "ward",
+    "language": "mandarin",
+    "status": "active",
+    "location": {
+      "lat": 25.017545,
+      "lng": 121.304094,
+      "address": "No.59, Lane 336, Tung An Street 330, Taiwan",
+      "city": "Taoyuan City",
+      "state": "Taiwan",
+      "postalCode": "",
+      "country": "TW"
+    },
+    "region": "taiwan",
+    "notes": "Chinese address: 台灣桃園市蘆竹區同安街336巷59號. Language: Chinese."
+  },
+  {
+    "id": "tw-taoyuan-ward",
+    "name": {
+      "en": "Taoyuan Ward",
+      "zhTw": "桃園支會"
+    },
+    "type": "ward",
+    "language": "mandarin",
+    "status": "active",
+    "location": {
+      "lat": 25.017545,
+      "lng": 121.304094,
+      "address": "No.59, Lane 336, Tung An Street 330, Taiwan",
+      "city": "Taoyuan City",
+      "state": "Taiwan",
+      "postalCode": "",
+      "country": "TW"
+    },
+    "region": "taiwan",
+    "notes": "Chinese address: 台灣桃園市蘆竹區同安街336巷59號. Language: Chinese."
+  },
+  {
+    "id": "tw-sanhsia-ward",
+    "name": {
+      "en": "Sanhsia Ward",
+      "zhTw": "三峽支會"
+    },
+    "type": "ward",
+    "language": "mandarin",
+    "status": "active",
+    "location": {
+      "lat": 24.944941,
+      "lng": 121.379773,
+      "address": "No. 503, Xuecheng Rd., Shulin Dist., New Taipei City 238, Taiwan",
+      "city": "New Taipei City",
+      "state": "Taiwan",
+      "postalCode": "",
+      "country": "TW"
+    },
+    "region": "taiwan",
+    "notes": "Chinese address: 台灣新北市樹林區學城路503號. Language: Chinese."
+  },
+  {
+    "id": "tw-hsinpan-ward",
+    "name": {
+      "en": "Hsinpan Ward",
+      "zhTw": "新板支會"
+    },
+    "type": "ward",
+    "language": "mandarin",
+    "status": "active",
+    "location": {
+      "lat": 24.983765,
+      "lng": 121.444303,
+      "address": "#295, Sec. 1, Chung Yang Road, Tu Cheng District 236, Taiwan",
+      "city": "New Taipei City",
+      "state": "Taiwan",
+      "postalCode": "",
+      "country": "TW"
+    },
+    "region": "taiwan",
+    "notes": "Chinese address: 台灣新北市土城區中央路一段295號. Language: Chinese."
+  },
+  {
+    "id": "tw-tu-cheng-ward",
+    "name": {
+      "en": "Tu Cheng Ward",
+      "zhTw": "土城支會"
+    },
+    "type": "ward",
+    "language": "mandarin",
+    "status": "active",
+    "location": {
+      "lat": 24.983765,
+      "lng": 121.444303,
+      "address": "#295, Sec. 1, Chung Yang Road, Tu Cheng District 236, Taiwan",
+      "city": "New Taipei City",
+      "state": "Taiwan",
+      "postalCode": "",
+      "country": "TW"
+    },
+    "region": "taiwan",
+    "notes": "Chinese address: 台灣新北市土城區中央路一段295號. Language: Chinese."
+  },
+  {
+    "id": "tw-linkou-ward",
+    "name": {
+      "en": "Linkou Ward",
+      "zhTw": "林口支會"
+    },
+    "type": "ward",
+    "language": "mandarin",
+    "status": "active",
+    "location": {
+      "lat": 25.029821,
+      "lng": 121.412119,
+      "address": "#500, Sec. 7, New Taipei Blvd, Hsin Chuang District 242, Taiwan",
+      "city": "New Taipei City",
+      "state": "Taiwan",
+      "postalCode": "",
+      "country": "TW"
+    },
+    "region": "taiwan",
+    "notes": "Chinese address: 台灣新北市新莊區新北大道七段500號. Language: Chinese."
+  },
+  {
+    "id": "tw-xinzhuang-ward",
+    "name": {
+      "en": "Xinzhuang Ward",
+      "zhTw": "新莊支會"
+    },
+    "type": "ward",
+    "language": "mandarin",
+    "status": "active",
+    "location": {
+      "lat": 25.029821,
+      "lng": 121.412119,
+      "address": "#500, Sec. 7, New Taipei Blvd, Hsin Chuang District 242, Taiwan",
+      "city": "New Taipei City",
+      "state": "Taiwan",
+      "postalCode": "",
+      "country": "TW"
+    },
+    "region": "taiwan",
+    "notes": "Chinese address: 台灣新北市新莊區新北大道七段500號. Language: Chinese."
+  },
+  {
+    "id": "tw-tanshui-ward",
+    "name": {
+      "en": "Tanshui Ward",
+      "zhTw": "淡水支會"
+    },
+    "type": "ward",
+    "language": "mandarin",
+    "status": "active",
+    "location": {
+      "lat": 25.143386,
+      "lng": 121.462514,
+      "address": "#120, Zhulin Rd, Tan Shui 251, Taiwan",
+      "city": "New Taipei City",
+      "state": "Taiwan",
+      "postalCode": "",
+      "country": "TW"
+    },
+    "region": "taiwan",
+    "notes": "Chinese address: 台灣新北市淡水區竹林路120號. Language: Chinese."
+  },
+  {
+    "id": "tw-peitou-ward",
+    "name": {
+      "en": "Peitou Ward",
+      "zhTw": "北投支會"
+    },
+    "type": "ward",
+    "language": "mandarin",
+    "status": "active",
+    "location": {
+      "lat": 25.141585,
+      "lng": 121.505254,
+      "address": "#111, Chu Hai Road, Pei Tou District 112, Taiwan",
+      "city": "Taipei City",
+      "state": "Taiwan",
+      "postalCode": "",
+      "country": "TW"
+    },
+    "region": "taiwan",
+    "notes": "Chinese address: 台灣台北市北投區珠海路111號. Language: Chinese."
+  },
+  {
+    "id": "tw-chungho-ward",
+    "name": {
+      "en": "Chungho Ward",
+      "zhTw": "中和支會"
+    },
+    "type": "ward",
+    "language": "mandarin",
+    "status": "active",
+    "location": {
+      "lat": 25.005084,
+      "lng": 121.508527,
+      "address": "#270, Pao Ping Road, Yung Ho District 234, Taiwan",
+      "city": "New Taipei City",
+      "state": "Taiwan",
+      "postalCode": "",
+      "country": "TW"
+    },
+    "region": "taiwan",
+    "notes": "Chinese address: 台灣新北市永和區寶平路270號. Language: Chinese."
+  },
+  {
+    "id": "tw-yungho-ward",
+    "name": {
+      "en": "Yungho Ward",
+      "zhTw": "永和支會"
+    },
+    "type": "ward",
+    "language": "mandarin",
+    "status": "active",
+    "location": {
+      "lat": 25.005084,
+      "lng": 121.508527,
+      "address": "#270, Pao Ping Road, Yung Ho District 234, Taiwan",
+      "city": "New Taipei City",
+      "state": "Taiwan",
+      "postalCode": "",
+      "country": "TW"
+    },
+    "region": "taiwan",
+    "notes": "Chinese address: 台灣新北市永和區寶平路270號. Language: Chinese."
+  },
+  {
+    "id": "tw-hsintien-1st-ward",
+    "name": {
+      "en": "Hsintien 1st Ward",
+      "zhTw": "新店第一支會"
+    },
+    "type": "ward",
+    "language": "mandarin",
+    "status": "active",
+    "location": {
+      "lat": 24.982613,
+      "lng": 121.539044,
+      "address": "3F, #63, Ming Chiuan Rd., Hsin Tien 231, Taiwan",
+      "city": "New Taipei City",
+      "state": "Taiwan",
+      "postalCode": "",
+      "country": "TW"
+    },
+    "region": "taiwan",
+    "notes": "Chinese address: 台灣新北市新店區民權路63號3樓. Language: Chinese."
+  },
+  {
+    "id": "tw-hsintien-2nd-ward",
+    "name": {
+      "en": "Hsintien 2nd Ward",
+      "zhTw": "新店第二支會"
+    },
+    "type": "ward",
+    "language": "mandarin",
+    "status": "active",
+    "location": {
+      "lat": 24.982613,
+      "lng": 121.539044,
+      "address": "3F, #63, Ming Chiuan Rd., Hsin Tien 231, Taiwan",
+      "city": "New Taipei City",
+      "state": "Taiwan",
+      "postalCode": "",
+      "country": "TW"
+    },
+    "region": "taiwan",
+    "notes": "Chinese address: 台灣新北市新店區民權路63號3樓. Language: Chinese."
+  },
+  {
+    "id": "tw-mucha-ward",
+    "name": {
+      "en": "Mucha Ward",
+      "zhTw": "木柵支會"
+    },
+    "type": "ward",
+    "language": "mandarin",
+    "status": "active",
+    "location": {
+      "lat": 24.988757,
+      "lng": 121.567201,
+      "address": "77 Sec 3 Mu Zhu Road, Wen Shan District, Taipei, Taiwan",
+      "city": "Taipei City",
+      "state": "Taiwan",
+      "postalCode": "",
+      "country": "TW"
+    },
+    "region": "taiwan",
+    "notes": "Chinese address: 台灣台北市文山區木柵路三段77號. Language: Chinese."
+  },
+  {
+    "id": "tw-chinhua-ward",
+    "name": {
+      "en": "Chinhua Ward",
+      "zhTw": "金華支會"
+    },
+    "type": "ward",
+    "language": "mandarin",
+    "status": "active",
+    "location": {
+      "lat": 25.030937,
+      "lng": 121.527819,
+      "address": "#5, Lane 183, Chin Hua Street, Da'an District 106, Taiwan",
+      "city": "Taipei City",
+      "state": "Taiwan",
+      "postalCode": "",
+      "country": "TW"
+    },
+    "region": "taiwan",
+    "notes": "Chinese address: 台灣台北市大安區金華街183巷5號. Language: Chinese."
+  },
+  {
+    "id": "tw-hsinan-ward",
+    "name": {
+      "en": "Hsinan Ward",
+      "zhTw": "信安支會"
+    },
+    "type": "ward",
+    "language": "mandarin",
+    "status": "active",
+    "location": {
+      "lat": 25.030937,
+      "lng": 121.527819,
+      "address": "#5, Lane 183, Chin Hua Street, Da'an District 106, Taiwan",
+      "city": "Taipei City",
+      "state": "Taiwan",
+      "postalCode": "",
+      "country": "TW"
+    },
+    "region": "taiwan",
+    "notes": "Chinese address: 台灣台北市大安區金華街183巷5號. Language: Chinese."
+  },
+  {
+    "id": "tw-hsinpu-ward",
+    "name": {
+      "en": "Hsinpu Ward",
+      "zhTw": "信埔支會"
+    },
+    "type": "ward",
+    "language": "mandarin",
+    "status": "active",
+    "location": {
+      "lat": 25.030937,
+      "lng": 121.527819,
+      "address": "#5, Lane 183, Chin Hua Street, Da'an District 106, Taiwan",
+      "city": "Taipei City",
+      "state": "Taiwan",
+      "postalCode": "",
+      "country": "TW"
+    },
+    "region": "taiwan",
+    "notes": "Chinese address: 台灣台北市大安區金華街183巷5號. Language: Chinese."
+  },
+  {
+    "id": "tw-wanta-ward",
+    "name": {
+      "en": "Wanta Ward",
+      "zhTw": "萬大支會"
+    },
+    "type": "ward",
+    "language": "mandarin",
+    "status": "active",
+    "location": {
+      "lat": 25.030937,
+      "lng": 121.527819,
+      "address": "#5, Lane 183, Chin Hua Street, Da'an District 106, Taiwan",
+      "city": "Taipei City",
+      "state": "Taiwan",
+      "postalCode": "",
+      "country": "TW"
+    },
+    "region": "taiwan",
+    "notes": "Chinese address: 台灣台北市大安區金華街183巷5號. Language: Chinese."
+  },
+  {
+    "id": "tw-sungshan-ward",
+    "name": {
+      "en": "Sungshan Ward",
+      "zhTw": "松山支會"
+    },
+    "type": "ward",
+    "language": "mandarin",
+    "status": "active",
+    "location": {
+      "lat": 25.051043,
+      "lng": 121.568659,
+      "address": "2F&3F, #328, Section 5, Nan Ching East Road 105, Taiwan",
+      "city": "Taipei City",
+      "state": "Taiwan",
+      "postalCode": "",
+      "country": "TW"
+    },
+    "region": "taiwan",
+    "notes": "Chinese address: 台灣台北市松山區南京東路五段328號2-3樓. Language: Chinese."
+  },
+  {
+    "id": "tw-neihu-ward",
+    "name": {
+      "en": "Neihu Ward",
+      "zhTw": "內湖支會"
+    },
+    "type": "ward",
+    "language": "mandarin",
+    "status": "active",
+    "location": {
+      "lat": 25.088354,
+      "lng": 121.599837,
+      "address": "#217, Ta Hu Shan Chuang St, Nei Hu District, Taipei City 114, Taiwan",
+      "city": "Taipei City",
+      "state": "Taiwan",
+      "postalCode": "",
+      "country": "TW"
+    },
+    "region": "taiwan",
+    "notes": "Chinese address: 台灣台北市內湖區大湖山莊街217號. Language: Chinese."
+  },
+  {
+    "id": "tw-hsichih-ward",
+    "name": {
+      "en": "Hsichih Ward",
+      "zhTw": "汐止支會"
+    },
+    "type": "ward",
+    "language": "mandarin",
+    "status": "active",
+    "location": {
+      "lat": 25.059978,
+      "lng": 121.652713,
+      "address": "9/F (55, 57), No.51, Nanxing Road, Xizhi District, New Taipei City, Taiwan",
+      "city": "New Taipei City",
+      "state": "Taiwan",
+      "postalCode": "",
+      "country": "TW"
+    },
+    "region": "taiwan",
+    "notes": "Chinese address: 台灣新北市汐止區南興路51號9樓. Language: Chinese."
+  },
+  {
+    "id": "tw-keelung-ward",
+    "name": {
+      "en": "Keelung Ward",
+      "zhTw": "基隆支會"
+    },
+    "type": "ward",
+    "language": "mandarin",
+    "status": "active",
+    "location": {
+      "lat": 25.131401,
+      "lng": 121.739729,
+      "address": "5th & 6th Floor, #20 Chung I Road, Keelung City 200, Taiwan",
+      "city": "Keelung City",
+      "state": "Taiwan",
+      "postalCode": "",
+      "country": "TW"
+    },
+    "region": "taiwan",
+    "notes": "Chinese address: 台灣基隆市中正區中一路20號5-6樓. Language: Chinese."
+  },
+  {
+    "id": "tw-shihlin-ward",
+    "name": {
+      "en": "Shihlin Ward",
+      "zhTw": "士林支會"
+    },
+    "location": {
+      "lat": 25.097735,
+      "lng": 121.533659,
+      "address": "#209, Fu Lin Road, Shih-lin District 111, Taiwan",
+      "city": "Taipei City",
+      "state": "Taiwan",
+      "postalCode": "",
+      "country": "TW"
+    },
+    "notes": "Chinese address: 台灣台北市士林區福林路209號. Language: Chinese.",
+    "type": "ward",
+    "language": "mandarin",
+    "status": "active",
+    "region": "taiwan"
+  },
+  {
+    "id": "tw-tienmu-ward",
+    "name": {
+      "en": "Tienmu Ward",
+      "zhTw": "天母支會"
+    },
+    "location": {
+      "lat": 25.097735,
+      "lng": 121.533659,
+      "address": "#209, Fu Lin Road, Shih-lin District 111, Taiwan",
+      "city": "Taipei City",
+      "state": "Taiwan",
+      "postalCode": "",
+      "country": "TW"
+    },
+    "notes": "Chinese address: 台灣台北市士林區福林路209號. Language: Chinese.",
+    "type": "ward",
+    "language": "mandarin",
+    "status": "active",
+    "region": "taiwan"
+  },
+  {
+    "id": "tw-luchou-ward",
+    "name": {
+      "en": "Luchou Ward",
+      "zhTw": "蘆洲支會"
+    },
+    "location": {
+      "lat": 25.054737,
+      "lng": 121.485834,
+      "address": "7F, #97, Section 4, Chung Hsin Road, San Chung 241, Taiwan",
+      "city": "New Taipei City",
+      "state": "Taiwan",
+      "postalCode": "",
+      "country": "TW"
+    },
+    "notes": "Chinese address: 台灣新北市三重區中興路四段97號7樓. Language: Chinese.",
+    "type": "ward",
+    "language": "mandarin",
+    "status": "active",
+    "region": "taiwan"
+  },
+  {
+    "id": "tw-sanchung-ward",
+    "name": {
+      "en": "Sanchung Ward",
+      "zhTw": "三重支會"
+    },
+    "location": {
+      "lat": 25.054737,
+      "lng": 121.485834,
+      "address": "7F, #97, Section 4, Chung Hsin Road, San Chung 241, Taiwan",
+      "city": "New Taipei City",
+      "state": "Taiwan",
+      "postalCode": "",
+      "country": "TW"
+    },
+    "notes": "Chinese address: 台灣新北市三重區中興路四段97號7樓. Language: Chinese.",
+    "type": "ward",
+    "language": "mandarin",
+    "status": "active",
+    "region": "taiwan"
+  },
+  {
     "id": "mo-macao-1st",
     "name": {
       "en": "Macau 1st Branch",
