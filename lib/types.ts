@@ -9,7 +9,16 @@ export type BranchLanguage =
 
 export type BranchStatus = "active" | "discontinued" | "unknown";
 
-export type BranchRegion = "utah";
+export type BranchRegion =
+  | "utah"
+  | "california"
+  | "texas"
+  | "new-york"
+  | "massachusetts"
+  | "mid-atlantic"
+  | "southeast"
+  | "pacific-northwest"
+  | "nevada";
 
 export type Branch = {
   id: string;

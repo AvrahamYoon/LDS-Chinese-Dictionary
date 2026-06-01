@@ -14,7 +14,7 @@ const BranchMap = dynamic(
   () => import("./BranchMap").then((module) => module.BranchMap),
   {
     ssr: false,
-    loading: () => <div className="map-loading">地圖載入中...</div>
+    loading: () => <div className="map-loading">Loading map...</div>
   }
 );
 
@@ -35,20 +35,22 @@ export function BranchMapPage({ branches }: BranchMapPageProps) {
 
   return (
     <main className="map-page">
-      <aside className="map-sidebar" aria-label="地圖篩選">
+      <aside className="map-sidebar" aria-label="Map filters">
         <div>
-          <p className="eyebrow">Utah MVP</p>
-          <h1>中文與亞洲單位地圖</h1>
+          <p className="eyebrow">MVP Directory</p>
+          <h1>Chinese-speaking Unit Map</h1>
           <p className="sidebar-copy">
-            先從猶他州的 6 個單位開始，後續可以逐步加入加州、其他北美城市與歷史資料。
+            A lightweight directory map for Chinese-speaking and Asian YSA
+            units, starting with seed data across Utah, California, Texas, New
+            York, Massachusetts, and selected additional states.
           </p>
         </div>
         <MapFilters filters={filters} onChange={setFilters} />
         <div className="result-count">
-          顯示 <strong>{filteredBranches.length}</strong> / {branches.length}
+          Showing <strong>{filteredBranches.length}</strong> / {branches.length}
         </div>
       </aside>
-      <section className="map-canvas-wrap" aria-label="地圖">
+      <section className="map-canvas-wrap" aria-label="Map">
         <BranchMap branches={filteredBranches} />
       </section>
     </main>
