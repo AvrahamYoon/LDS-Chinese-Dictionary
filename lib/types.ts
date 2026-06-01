@@ -17,7 +17,11 @@ export type BranchRegion =
   | "mid-atlantic"
   | "southeast"
   | "pacific-northwest"
-  | "nevada";
+  | "nevada"
+  | "united-kingdom"
+  | "canada"
+  | "australia"
+  | "new-zealand";
 
 export type Branch = {
   id: string;

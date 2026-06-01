@@ -510,6 +510,210 @@ export const branches: Branch[] = [
       country: "US"
     },
     region: "nevada"
+  },
+  {
+    id: "uk-newcastle-mandarin",
+    name: { en: "Newcastle Branch (Mandarin)" },
+    type: "branch",
+    language: "mandarin",
+    status: "active",
+    location: {
+      lat: 55.0119,
+      lng: -1.6458,
+      address: "Fawdon Lane",
+      city: "Newcastle",
+      state: "",
+      postalCode: "NE3 2SR",
+      country: "GB"
+    },
+    region: "united-kingdom"
+  },
+  {
+    id: "ca-bc-richmond-2nd-chinese",
+    name: { en: "Richmond 2nd (Chinese) Branch" },
+    type: "branch",
+    language: "mandarin",
+    status: "active",
+    location: {
+      lat: 49.1409,
+      lng: -123.1323,
+      address: "8440 Williams Road",
+      city: "Richmond",
+      state: "BC",
+      postalCode: "V7A 1G6",
+      country: "CA"
+    },
+    region: "canada"
+  },
+  {
+    id: "ca-bc-burnaby-vancouver-wah-yan-chinese",
+    name: { en: "Vancouver Wah Yan Ward (Chinese)" },
+    type: "ward",
+    language: "mandarin",
+    status: "active",
+    location: {
+      lat: 49.2495,
+      lng: -122.9889,
+      address: "5280 Kincaid Street",
+      city: "Burnaby",
+      state: "BC",
+      postalCode: "V5G 1V9",
+      country: "CA"
+    },
+    region: "canada"
+  },
+  {
+    id: "ca-on-north-york-bayview-mandarin",
+    name: { en: "Bayview (Mandarin) Ward" },
+    type: "ward",
+    language: "mandarin",
+    status: "active",
+    location: {
+      lat: 43.7555,
+      lng: -79.3791,
+      address: "19 Northdale Road",
+      city: "North York",
+      state: "ON",
+      postalCode: "M2L 2L8",
+      country: "CA"
+    },
+    region: "canada"
+  },
+  {
+    id: "ca-ab-calgary-varsity-mandarin",
+    name: { en: "Varsity Ward (Mandarin)" },
+    type: "ward",
+    language: "mandarin",
+    status: "active",
+    location: {
+      lat: 51.0734,
+      lng: -114.1197,
+      address: "2526 24th Ave NW",
+      city: "Calgary",
+      state: "AB",
+      postalCode: "T2N 1T3",
+      country: "CA"
+    },
+    region: "canada"
+  },
+  {
+    id: "ca-qc-montreal-mount-royal-mandarin",
+    name: { en: "Mount Royal (Mandarin) Branch" },
+    type: "branch",
+    language: "mandarin",
+    status: "active",
+    location: {
+      lat: 45.5075,
+      lng: -73.6978,
+      address: "4355 Rue de l'Orphelinat",
+      city: "Montreal",
+      state: "QC",
+      postalCode: "H4L 1K2",
+      country: "CA"
+    },
+    region: "canada"
+  },
+  {
+    id: "ca-on-richmond-hill-markham-cantonese",
+    name: { en: "Markham (Cantonese) Ward" },
+    type: "ward",
+    language: "cantonese",
+    status: "active",
+    location: {
+      lat: 43.8594,
+      lng: -79.3867,
+      address: "108 Briggs Avenue",
+      city: "Richmond Hill",
+      state: "ON",
+      postalCode: "L4B 3J5",
+      country: "CA"
+    },
+    region: "canada"
+  },
+  {
+    id: "au-nsw-punchbowl-bankstown-3rd-cantonese",
+    name: { en: "Bankstown 3rd Branch (Cantonese)" },
+    type: "branch",
+    language: "cantonese",
+    status: "active",
+    location: {
+      lat: -33.9222,
+      lng: 151.0553,
+      address: "19-27 Kelly Street",
+      city: "Punchbowl",
+      state: "NSW",
+      postalCode: "2196",
+      country: "AU"
+    },
+    region: "australia"
+  },
+  {
+    id: "au-nsw-ryde-mandarin",
+    name: { en: "Ryde Ward (Mandarin)" },
+    type: "ward",
+    language: "mandarin",
+    status: "active",
+    location: {
+      lat: -33.8121,
+      lng: 151.1009,
+      address: "412-420 Blaxland Road",
+      city: "Ryde",
+      state: "NSW",
+      postalCode: "2112",
+      country: "AU"
+    },
+    region: "australia"
+  },
+  {
+    id: "au-vic-melbourne-1st-mandarin",
+    name: { en: "Melbourne 1st Branch (Mandarin)" },
+    type: "branch",
+    language: "mandarin",
+    status: "active",
+    location: {
+      lat: -37.8106,
+      lng: 144.9681,
+      address: "123 Lonsdale Street",
+      city: "Melbourne",
+      state: "VIC",
+      postalCode: "3000",
+      country: "AU"
+    },
+    region: "australia"
+  },
+  {
+    id: "au-qld-eight-mile-plains-sunnybank-mandarin",
+    name: { en: "Sunnybank Branch (Mandarin)" },
+    type: "branch",
+    language: "mandarin",
+    status: "active",
+    location: {
+      lat: -27.5752,
+      lng: 153.0912,
+      address: "370 Underwood Road",
+      city: "Eight Mile Plains",
+      state: "QLD",
+      postalCode: "4113",
+      country: "AU"
+    },
+    region: "australia"
+  },
+  {
+    id: "nz-auckland-cbd-3rd-chinese",
+    name: { en: "Auckland 3rd Branch (Chinese)" },
+    type: "branch",
+    language: "mandarin",
+    status: "active",
+    location: {
+      lat: -36.8506,
+      lng: 174.7637,
+      address: "2 Scotia Place",
+      city: "Auckland CBD",
+      state: "Auckland",
+      postalCode: "1010",
+      country: "NZ"
+    },
+    region: "new-zealand"
   }
 ];
 

@@ -29,15 +29,15 @@ const initialFilters: BranchFilters = {
 
 const copy = {
   en: {
-    eyebrow: "MVP Directory",
+    eyebrow: "Global Directory",
     title: "Chinese-speaking Unit Map",
-    body: "A lightweight directory map for Mandarin and Chinese-speaking Latter-day Saint units, plus Asian YSA units where relevant.",
+    body: "Browse Mandarin and Chinese-speaking Latter-day Saint units by location, language, type, and current status.",
     showing: "Showing"
   },
   zh: {
-    eyebrow: "目錄 MVP",
+    eyebrow: "全球目錄",
     title: "國語中文單位地圖",
-    body: "一份輕量的單位地圖，整理海外國語、中文與相關亞洲 YSA 單位的位置與基本資料。",
+    body: "依地點、語言、類型與狀態查找全球國語中文後期聖徒單位。",
     showing: "顯示"
   }
 };
