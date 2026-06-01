@@ -10,6 +10,12 @@ type BranchMapProps = {
   locale: Locale;
 };
 
+type BranchLocationGroup = {
+  lat: number;
+  lng: number;
+  branches: Branch[];
+};
+
 const UNITED_STATES_CENTER: L.LatLngExpression = [39.5, -98.35];
 
 const popupCopy = {
@@ -37,26 +43,46 @@ function markerColor(branch: Branch) {
   return branch.type === "ward" ? "#2563eb" : "#16a34a";
 }
 
-function createMarkerIcon(branch: Branch) {
-  const color = markerColor(branch);
+function markerGroupColor(branches: Branch[]) {
+  const activeBranches = branches.filter(
+    (branch) => branch.status !== "discontinued"
+  );
+
+  if (activeBranches.length === 0) {
+    return "#8a8f98";
+  }
+
+  const hasWards = activeBranches.some((branch) => branch.type === "ward");
+  const hasBranches = activeBranches.some((branch) => branch.type === "branch");
+
+  if (hasWards && hasBranches) {
+    return "#b8841f";
+  }
+
+  return markerColor(activeBranches[0]);
+}
+
+function createMarkerIcon(branches: Branch[]) {
+  const color = markerGroupColor(branches);
+  const count = branches.length;
+  const countClass = count > 1 ? " is-grouped" : "";
+  const label = count > 1 ? count.toString() : "";
 
   return L.divIcon({
-    className: "branch-marker",
-    html: `<span style="background:${color}"></span>`,
+    className: `branch-marker${countClass}`,
+    html: `<span style="background:${color}">${label}</span>`,
     iconSize: [24, 24],
     iconAnchor: [12, 12],
     popupAnchor: [0, -12]
   });
 }
 
-function popupHtml(branch: Branch, locale: Locale) {
-  const t = popupCopy[locale];
-  const title =
-    locale === "zh" ? branch.name.zhTw ?? branch.name.en : branch.name.en;
-  const officialLink = branch.officialUrl
-    ? `<a class="popup-official-link" href="${branch.officialUrl}" target="_blank" rel="noreferrer">${t.official}</a>`
-    : "";
-  const address = [
+function branchTitle(branch: Branch, locale: Locale) {
+  return locale === "zh" ? branch.name.zhTw ?? branch.name.en : branch.name.en;
+}
+
+function branchAddress(branch: Branch) {
+  return [
     branch.location.address,
     branch.location.city,
     branch.location.state,
@@ -64,6 +90,15 @@ function popupHtml(branch: Branch, locale: Locale) {
   ]
     .filter(Boolean)
     .join(", ");
+}
+
+function popupHtml(branch: Branch, locale: Locale) {
+  const t = popupCopy[locale];
+  const title = branchTitle(branch, locale);
+  const officialLink = branch.officialUrl
+    ? `<a class="popup-official-link" href="${branch.officialUrl}" target="_blank" rel="noreferrer">${t.official}</a>`
+    : "";
+  const address = branchAddress(branch);
 
   return `
     <div class="branch-popup">
@@ -89,6 +124,76 @@ function popupHtml(branch: Branch, locale: Locale) {
       </div>
     </div>
   `;
+}
+
+function groupedPopupHtml(group: BranchLocationGroup, locale: Locale) {
+  if (group.branches.length === 1) {
+    return popupHtml(group.branches[0], locale);
+  }
+
+  const t = popupCopy[locale];
+  const address = branchAddress(group.branches[0]);
+  const unitsLabel = locale === "zh" ? "個單位" : "units";
+  const heading =
+    locale === "zh"
+      ? `此地點有 ${group.branches.length} ${unitsLabel}`
+      : `${group.branches.length} ${unitsLabel} at this location`;
+  const branchItems = group.branches
+    .map(
+      (branch) => `
+        <li>
+          <strong>${branchTitle(branch, locale)}</strong>
+          <dl>
+            <div><dt>${t.type}</dt><dd>${formatBranchType(
+              branch.type,
+              locale
+            )}</dd></div>
+            <div><dt>${t.language}</dt><dd>${formatLanguage(
+              branch.language,
+              locale
+            )}</dd></div>
+            <div><dt>${t.status}</dt><dd>${formatStatus(
+              branch.status,
+              locale
+            )}</dd></div>
+          </dl>
+          <a href="/branches/${branch.id}?lang=${locale}">${t.details}</a>
+        </li>
+      `
+    )
+    .join("");
+
+  return `
+    <div class="branch-popup branch-popup-group">
+      <strong>${heading}</strong>
+      <p>${address}</p>
+      <ul>
+        ${branchItems}
+      </ul>
+    </div>
+  `;
+}
+
+function groupBranchesByLocation(branches: Branch[]) {
+  const groups = new Map<string, BranchLocationGroup>();
+
+  branches.forEach((branch) => {
+    const key = `${branch.location.lat},${branch.location.lng}`;
+    const group = groups.get(key);
+
+    if (group) {
+      group.branches.push(branch);
+      return;
+    }
+
+    groups.set(key, {
+      lat: branch.location.lat,
+      lng: branch.location.lng,
+      branches: [branch]
+    });
+  });
+
+  return Array.from(groups.values());
 }
 
 export function BranchMap({ branches, locale }: BranchMapProps) {
@@ -134,14 +239,16 @@ export function BranchMap({ branches, locale }: BranchMapProps) {
 
     layer.clearLayers();
 
-    branches.forEach((branch) => {
-      L.marker([branch.location.lat, branch.location.lng], {
-        icon: createMarkerIcon(branch),
-        title: branch.name.en
+    const branchGroups = groupBranchesByLocation(branches);
+
+    branchGroups.forEach((group) => {
+      L.marker([group.lat, group.lng], {
+        icon: createMarkerIcon(group.branches),
+        title: group.branches.map((branch) => branch.name.en).join(", ")
       })
-        .bindPopup(popupHtml(branch, locale), {
+        .bindPopup(groupedPopupHtml(group, locale), {
           closeButton: true,
-          maxWidth: 300
+          maxWidth: 340
         })
         .addTo(layer);
     });

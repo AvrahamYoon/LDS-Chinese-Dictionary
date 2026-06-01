@@ -281,6 +281,16 @@ h1 {
   box-shadow: 0 2px 10px rgb(0 0 0 / 28%);
 }
 
+.branch-marker.is-grouped span {
+  display: grid;
+  place-items: center;
+  width: 28px;
+  height: 28px;
+  color: white;
+  font-size: 0.76rem;
+  font-weight: 800;
+}
+
 .branch-popup {
   min-width: 210px;
 }
@@ -342,6 +352,39 @@ h1 {
 .branch-popup .popup-official-link {
   background: var(--primary);
   color: white;
+}
+
+.branch-popup-group {
+  min-width: 260px;
+}
+
+.branch-popup-group ul {
+  display: grid;
+  gap: 12px;
+  padding: 0;
+  margin: 12px 0 0;
+  list-style: none;
+}
+
+.branch-popup-group li {
+  display: grid;
+  gap: 8px;
+  padding-top: 12px;
+  border-top: 1px solid var(--border);
+}
+
+.branch-popup-group li:first-child {
+  padding-top: 0;
+  border-top: 0;
+}
+
+.branch-popup-group dl {
+  margin-bottom: 0;
+}
+
+.branch-popup-group a {
+  justify-self: start;
+  background: var(--surface-muted);
 }
 
 .detail-page {
