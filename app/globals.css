@@ -318,9 +318,30 @@ h1 {
   margin: 0;
 }
 
+.popup-actions {
+  display: grid;
+  gap: 8px;
+}
+
 .branch-popup a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 34px;
+  padding: 0 10px;
+  border-radius: 999px;
   color: var(--primary);
   font-weight: 700;
+  text-decoration: none;
+}
+
+.branch-popup a:first-child {
+  background: var(--surface-muted);
+}
+
+.branch-popup .popup-official-link {
+  background: var(--primary);
+  color: white;
 }
 
 .detail-page {

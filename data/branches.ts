@@ -721,9 +721,9 @@ const officialUrls: Partial<Record<string, string>> = {
   "ut-provo-edgemont-22nd":
     "https://local.churchofjesuschrist.org/zh-hant/units/us/ut/edgemont-22nd-ward-chinese",
   "ut-provo-ysa-asian-1st":
-    "https://local.churchofjesuschrist.org/zh-hant/units/us/ut/provo-ysa-asian-1st-ward",
+    "https://local.churchofjesuschrist.org/en/units/us/ut/provo-ysa-asian-1st-ward",
   "ut-provo-ysa-asian-2nd":
-    "https://local.churchofjesuschrist.org/zh-hant/units/us/ut/provo-ysa-asian-2nd-ward",
+    "https://local.churchofjesuschrist.org/en/units/us/ut/provo-ysa-asian-2nd-ward",
   "ut-salt-lake-6th-chinese":
     "https://local.churchofjesuschrist.org/zh-hant/units/us/ut/salt-lake-6th-ward-chinese",
   "ut-logan-foothills-3rd-mandarin":
@@ -779,7 +779,23 @@ const officialUrls: Partial<Record<string, string>> = {
   "ca-bc-richmond-2nd-chinese":
     "https://local.churchofjesuschrist.org/zh-hant/units/ca/bc/richmond-2nd-branch-chinese",
   "ca-bc-burnaby-vancouver-wah-yan-chinese":
-    "https://local.churchofjesuschrist.org/zh-hant/units/ca/bc/vancouver-wah-yan-ward-chinese"
+    "https://local.churchofjesuschrist.org/zh-hant/units/ca/bc/vancouver-wah-yan-ward-chinese",
+  "ca-on-north-york-bayview-mandarin":
+    "https://local.churchofjesuschrist.org/zh-hant/units/ca/on/bayview-ward-mandarin",
+  "ca-ab-calgary-varsity-mandarin":
+    "https://local.churchofjesuschrist.org/zh-hant/units/ca/ab/varsity-ward-mandarin",
+  "ca-qc-montreal-mount-royal-mandarin":
+    "https://local.churchofjesuschrist.org/en/units/ca/qc/mount-royal-branch-mandarin",
+  "ca-on-richmond-hill-markham-cantonese":
+    "https://local.churchofjesuschrist.org/zh-hant/units/markham-ward-cantonese",
+  "au-nsw-punchbowl-bankstown-3rd-cantonese":
+    "https://local.churchofjesuschrist.org/zh-hant/units/bankstown-3rd-branch-cantonese",
+  "au-nsw-ryde-mandarin":
+    "https://local.churchofjesuschrist.org/zh-hant/units/au/nsw/ryde-ward-mandarin",
+  "au-vic-melbourne-1st-mandarin":
+    "https://local.churchofjesuschrist.org/zh-hant/units/au/vic/melbourne-1st-branch-mandarin",
+  "nz-auckland-cbd-3rd-chinese":
+    "https://local.churchofjesuschrist.org/zh-hant/units/nz/-/auckland-3rd-branch-chinese"
 };
 
 export const branches: Branch[] = branchRecords.map((branch) => ({

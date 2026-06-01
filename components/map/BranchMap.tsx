@@ -17,13 +17,15 @@ const popupCopy = {
     type: "Type",
     language: "Language",
     status: "Status",
-    details: "View details"
+    details: "View details",
+    official: "Official church page"
   },
   zh: {
     type: "類型",
     language: "語言",
     status: "狀態",
-    details: "查看詳情"
+    details: "查看詳情",
+    official: "前往官方教會頁面"
   }
 };
 
@@ -49,7 +51,11 @@ function createMarkerIcon(branch: Branch) {
 
 function popupHtml(branch: Branch, locale: Locale) {
   const t = popupCopy[locale];
-  const title = locale === "zh" ? branch.name.zhTw ?? branch.name.en : branch.name.en;
+  const title =
+    locale === "zh" ? branch.name.zhTw ?? branch.name.en : branch.name.en;
+  const officialLink = branch.officialUrl
+    ? `<a class="popup-official-link" href="${branch.officialUrl}" target="_blank" rel="noreferrer">${t.official}</a>`
+    : "";
   const address = [
     branch.location.address,
     branch.location.city,
@@ -77,7 +83,10 @@ function popupHtml(branch: Branch, locale: Locale) {
           locale
         )}</dd></div>
       </dl>
-      <a href="/branches/${branch.id}?lang=${locale}">${t.details}</a>
+      <div class="popup-actions">
+        <a href="/branches/${branch.id}?lang=${locale}">${t.details}</a>
+        ${officialLink}
+      </div>
     </div>
   `;
 }
@@ -132,7 +141,7 @@ export function BranchMap({ branches, locale }: BranchMapProps) {
       })
         .bindPopup(popupHtml(branch, locale), {
           closeButton: true,
-          maxWidth: 280
+          maxWidth: 300
         })
         .addTo(layer);
     });
