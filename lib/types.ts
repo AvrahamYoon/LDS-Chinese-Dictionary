@@ -23,7 +23,8 @@ export type BranchRegion =
   | "canada"
   | "australia"
   | "new-zealand"
-  | "malaysia";
+  | "malaysia"
+  | "macau";
 
 export type Branch = {
   id: string;

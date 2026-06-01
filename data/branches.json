@@ -943,5 +943,26 @@
     },
     "region": "malaysia",
     "officialUrl": "https://local.churchofjesuschrist.org/en/my/sibu/22-jalan-bunga-dahlia-taman-seduan-8"
+  },
+  {
+    "id": "mo-macao-1st",
+    "name": {
+      "en": "Macau 1st Branch",
+      "zhTw": "??????"
+    },
+    "type": "branch",
+    "language": "mandarin",
+    "status": "active",
+    "location": {
+      "lat": 22.1987,
+      "lng": 113.5439,
+      "address": "27-31 Tv. do Dr. Francisco Vieira Machado 27-31, G/F, Bai Yun Garden",
+      "city": "Macao",
+      "state": "",
+      "postalCode": "",
+      "country": "MO"
+    },
+    "region": "macau",
+    "officialUrl": "https://local.churchofjesuschrist.org/en/mo/-/macao"
   }
 ]
