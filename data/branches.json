@@ -948,7 +948,7 @@
     "id": "tw-makung-branch",
     "name": {
       "en": "Makung Branch",
-      "zhTw": "馬公支會"
+      "zhTw": "馬公分會"
     },
     "type": "branch",
     "language": "mandarin",
@@ -969,7 +969,7 @@
     "id": "tw-heng-chun-branch",
     "name": {
       "en": "Heng Chun Branch",
-      "zhTw": "恆春支會"
+      "zhTw": "恆春分會"
     },
     "type": "branch",
     "language": "mandarin",
@@ -1242,7 +1242,7 @@
     "id": "tw-chishan-branch",
     "name": {
       "en": "Chishan Branch",
-      "zhTw": "旗山支會"
+      "zhTw": "旗山分會"
     },
     "type": "branch",
     "language": "mandarin",
@@ -1452,7 +1452,7 @@
     "id": "tw-yuli-branch",
     "name": {
       "en": "Yuli Branch",
-      "zhTw": "玉里支會"
+      "zhTw": "玉里分會"
     },
     "type": "branch",
     "language": "mandarin",
@@ -1473,7 +1473,7 @@
     "id": "tw-taipo-branch",
     "name": {
       "en": "Taipo Branch",
-      "zhTw": "太保支會"
+      "zhTw": "太保分會"
     },
     "type": "branch",
     "language": "mandarin",
@@ -1662,7 +1662,7 @@
     "id": "tw-mingchien-branch",
     "name": {
       "en": "Mingchien Branch",
-      "zhTw": "名間支會"
+      "zhTw": "名間分會"
     },
     "type": "branch",
     "language": "mandarin",
@@ -1704,7 +1704,7 @@
     "id": "tw-pu-li-branch",
     "name": {
       "en": "Pu Li Branch",
-      "zhTw": "埔里支會"
+      "zhTw": "埔里分會"
     },
     "type": "branch",
     "language": "mandarin",
@@ -2040,7 +2040,7 @@
     "id": "tw-lanyang-branch",
     "name": {
       "en": "Lanyang Branch",
-      "zhTw": "蘭陽支會"
+      "zhTw": "蘭陽分會"
     },
     "type": "branch",
     "language": "mandarin",
