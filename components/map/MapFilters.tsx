@@ -14,6 +14,7 @@ const regionLabels: Record<BranchRegion, Record<Locale, string>> = {
   australia: { en: "Australia", zh: "澳洲" },
   california: { en: "California", zh: "加州" },
   canada: { en: "Canada", zh: "加拿大" },
+  china: { en: "China", zh: "中國" },
   "hong-kong": { en: "Hong Kong", zh: "香港" },
   florida: { en: "Florida", zh: "佛羅里達" },
   macau: { en: "Macau", zh: "澳門" },

@@ -8,6 +8,8 @@ export type BranchLanguage =
 
 export type BranchStatus = "active" | "discontinued" | "unknown";
 
+export type TempleStatus = "operating" | "under-construction" | "announced";
+
 export type BranchRegion =
   | "utah"
   | "arizona"
@@ -27,6 +29,7 @@ export type BranchRegion =
   | "malaysia"
   | "macau"
   | "hong-kong"
+  | "china"
   | "taiwan";
 
 export type Branch = {
@@ -55,6 +58,30 @@ export type Branch = {
   officialUrl?: string;
   sources?: string[];
   lastVerified?: string;
+};
+
+export type Temple = {
+  id: string;
+  name: {
+    en: string;
+    zhTw: string;
+  };
+  status: TempleStatus;
+  location: {
+    lat: number;
+    lng: number;
+    address?: string;
+    city: string;
+    state: string;
+    country: string;
+  };
+  region: BranchRegion;
+  announced?: string;
+  groundbreaking?: string;
+  dedicated?: string;
+  rededicated?: string;
+  notes?: string;
+  officialUrl: string;
 };
 
 export type BranchFilters = {

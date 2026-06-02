@@ -2,12 +2,13 @@
 
 import { useEffect, useRef } from "react";
 import L from "leaflet";
-import type { Branch, Locale } from "@/lib/types";
+import type { Branch, Locale, Temple, TempleStatus } from "@/lib/types";
 import { formatBranchType, formatLanguage, formatStatus } from "@/lib/format";
 
 type BranchMapProps = {
   branches: Branch[];
   locale: Locale;
+  temples: Temple[];
 };
 
 type BranchLocationGroup = {
@@ -77,8 +78,34 @@ function createMarkerIcon(branches: Branch[]) {
   });
 }
 
+function createTempleIcon(status: TempleStatus) {
+  const statusClass = ` temple-${status}`;
+
+  return L.divIcon({
+    className: `temple-marker${statusClass}`,
+    html: "<span>T</span>",
+    iconSize: [30, 30],
+    iconAnchor: [15, 15],
+    popupAnchor: [0, -14]
+  });
+}
+
 function branchTitle(branch: Branch, locale: Locale) {
   return locale === "zh" ? branch.name.zhTw ?? branch.name.en : branch.name.en;
+}
+
+function templeTitle(temple: Temple, locale: Locale) {
+  return locale === "zh" ? temple.name.zhTw : temple.name.en;
+}
+
+function templeStatusLabel(status: TempleStatus, locale: Locale) {
+  const labels: Record<TempleStatus, Record<Locale, string>> = {
+    announced: { en: "Announced", zh: "已宣布" },
+    operating: { en: "Operating", zh: "營運中" },
+    "under-construction": { en: "Under construction", zh: "興建中" }
+  };
+
+  return labels[status][locale];
 }
 
 function branchAddress(branch: Branch) {
@@ -121,6 +148,50 @@ function popupHtml(branch: Branch, locale: Locale) {
       <div class="popup-actions">
         <a href="/branches/${branch.id}?lang=${locale}">${t.details}</a>
         ${officialLink}
+      </div>
+    </div>
+  `;
+}
+
+function templePopupHtml(temple: Temple, locale: Locale) {
+  const statusLabel = templeStatusLabel(temple.status, locale);
+  const address = [
+    temple.location.address,
+    temple.location.city,
+    temple.location.state
+  ]
+    .filter(Boolean)
+    .join(", ");
+  const milestones = [
+    temple.announced
+      ? `<div><dt>${locale === "zh" ? "宣布" : "Announced"}</dt><dd>${temple.announced}</dd></div>`
+      : "",
+    temple.groundbreaking
+      ? `<div><dt>${locale === "zh" ? "動土" : "Groundbreaking"}</dt><dd>${temple.groundbreaking}</dd></div>`
+      : "",
+    temple.dedicated
+      ? `<div><dt>${locale === "zh" ? "奉獻" : "Dedicated"}</dt><dd>${temple.dedicated}</dd></div>`
+      : "",
+    temple.rededicated
+      ? `<div><dt>${locale === "zh" ? "重新奉獻" : "Rededicated"}</dt><dd>${temple.rededicated}</dd></div>`
+      : ""
+  ]
+    .filter(Boolean)
+    .join("");
+
+  return `
+    <div class="branch-popup temple-popup">
+      <strong>${templeTitle(temple, locale)}</strong>
+      <p>${address}</p>
+      <dl>
+        <div><dt>${locale === "zh" ? "狀態" : "Status"}</dt><dd>${statusLabel}</dd></div>
+        ${milestones}
+      </dl>
+      ${temple.notes ? `<p>${temple.notes}</p>` : ""}
+      <div class="popup-actions">
+        <a class="popup-official-link" href="${temple.officialUrl}" target="_blank" rel="noreferrer">
+          ${locale === "zh" ? "官方聖殿頁面" : "Official temple page"}
+        </a>
       </div>
     </div>
   `;
@@ -196,7 +267,7 @@ function groupBranchesByLocation(branches: Branch[]) {
   return Array.from(groups.values());
 }
 
-export function BranchMap({ branches, locale }: BranchMapProps) {
+export function BranchMap({ branches, locale, temples }: BranchMapProps) {
   const mapElementRef = useRef<HTMLDivElement | null>(null);
   const mapRef = useRef<L.Map | null>(null);
   const layerRef = useRef<L.LayerGroup | null>(null);
@@ -253,13 +324,28 @@ export function BranchMap({ branches, locale }: BranchMapProps) {
         .addTo(layer);
     });
 
-    if (branches.length > 0) {
-      const bounds = L.latLngBounds(
-        branches.map((branch) => [branch.location.lat, branch.location.lng])
-      );
+    temples.forEach((temple) => {
+      L.marker([temple.location.lat, temple.location.lng], {
+        icon: createTempleIcon(temple.status),
+        title: temple.name.en
+      })
+        .bindPopup(templePopupHtml(temple, locale), {
+          closeButton: true,
+          maxWidth: 360
+        })
+        .addTo(layer);
+    });
+
+    const boundsPoints = [
+      ...branches.map((branch) => [branch.location.lat, branch.location.lng]),
+      ...temples.map((temple) => [temple.location.lat, temple.location.lng])
+    ] as L.LatLngExpression[];
+
+    if (boundsPoints.length > 0) {
+      const bounds = L.latLngBounds(boundsPoints);
       map.fitBounds(bounds, { padding: [42, 42], maxZoom: 11 });
     }
-  }, [branches, locale]);
+  }, [branches, locale, temples]);
 
   return <div ref={mapElementRef} className="leaflet-map" />;
 }

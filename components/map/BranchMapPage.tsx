@@ -3,13 +3,14 @@
 import Link from "next/link";
 import { useMemo, useState } from "react";
 import dynamic from "next/dynamic";
-import type { Branch, BranchFilters, Locale } from "@/lib/types";
+import type { Branch, BranchFilters, Locale, Temple } from "@/lib/types";
 import { filterBranches } from "@/lib/filterBranches";
 import { MapFilters } from "./MapFilters";
 
 type BranchMapPageProps = {
   branches: Branch[];
   locale: Locale;
+  temples: Temple[];
 };
 
 const BranchMap = dynamic(
@@ -43,8 +44,13 @@ const copy = {
   }
 };
 
-export function BranchMapPage({ branches, locale }: BranchMapPageProps) {
+export function BranchMapPage({
+  branches,
+  locale,
+  temples
+}: BranchMapPageProps) {
   const [filters, setFilters] = useState<BranchFilters>(initialFilters);
+  const [showTemples, setShowTemples] = useState(true);
   const t = copy[locale];
 
   const filteredBranches = useMemo(
@@ -88,13 +94,25 @@ export function BranchMapPage({ branches, locale }: BranchMapPageProps) {
           locale={locale}
           onChange={setFilters}
         />
+        <label className="map-toggle">
+          <input
+            checked={showTemples}
+            onChange={(event) => setShowTemples(event.target.checked)}
+            type="checkbox"
+          />
+          <span>{locale === "zh" ? "顯示聖殿" : "Show temples"}</span>
+        </label>
         <div className="result-count">
           {t.showing} <strong>{filteredBranches.length}</strong> /{" "}
           {branches.length}
         </div>
       </aside>
       <section className="map-canvas-wrap" aria-label="Map">
-        <BranchMap branches={filteredBranches} locale={locale} />
+        <BranchMap
+          branches={filteredBranches}
+          locale={locale}
+          temples={showTemples ? temples : []}
+        />
       </section>
     </main>
   );

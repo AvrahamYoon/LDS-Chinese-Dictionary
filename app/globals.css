@@ -250,6 +250,20 @@ h1 {
   color: var(--primary);
 }
 
+.map-toggle {
+  display: inline-flex;
+  gap: 10px;
+  align-items: center;
+  color: var(--muted);
+  font-weight: 700;
+}
+
+.map-toggle input {
+  width: 18px;
+  height: 18px;
+  accent-color: var(--accent);
+}
+
 .map-canvas-wrap {
   min-height: 100vh;
 }
@@ -289,6 +303,36 @@ h1 {
   color: white;
   font-size: 0.76rem;
   font-weight: 800;
+}
+
+.temple-marker {
+  background: transparent;
+}
+
+.temple-marker span {
+  display: grid;
+  place-items: center;
+  width: 28px;
+  height: 28px;
+  border: 3px solid white;
+  border-radius: 50%;
+  background: var(--accent);
+  color: white;
+  font-size: 0.78rem;
+  font-weight: 900;
+  box-shadow: 0 2px 12px rgb(0 0 0 / 30%);
+}
+
+.temple-marker.temple-announced span {
+  background: #7c3aed;
+}
+
+.temple-marker.temple-under-construction span {
+  background: #b8841f;
+}
+
+.temple-popup dl {
+  margin-bottom: 10px;
 }
 
 .branch-popup {

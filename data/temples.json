@@ -1,0 +1,88 @@
+[
+  {
+    "id": "taipei-taiwan-temple",
+    "name": {
+      "en": "Taipei Taiwan Temple",
+      "zhTw": "台灣台北聖殿"
+    },
+    "status": "operating",
+    "location": {
+      "lat": 25.032947,
+      "lng": 121.532481,
+      "address": "256 Ai Kuo East Road, Taipei 10642, Taiwan",
+      "city": "Taipei",
+      "state": "Taiwan",
+      "country": "TW"
+    },
+    "region": "taiwan",
+    "announced": "1982-03-31",
+    "groundbreaking": "1982-08-27",
+    "dedicated": "1984-11-17",
+    "notes": "Official temple page lists milestones: announced March 31, 1982; groundbreaking August 27, 1982; dedicated November 17, 1984.",
+    "officialUrl": "https://www.churchofjesuschrist.org/temples/details/taipei-taiwan-temple?lang=zho"
+  },
+  {
+    "id": "kaohsiung-taiwan-temple",
+    "name": {
+      "en": "Kaohsiung Taiwan Temple",
+      "zhTw": "台灣高雄聖殿"
+    },
+    "status": "under-construction",
+    "location": {
+      "lat": 22.650159,
+      "lng": 120.345454,
+      "address": "Dachang Road and Dehua Street, Niaosong District, Kaohsiung, Taiwan",
+      "city": "Kaohsiung",
+      "state": "Taiwan",
+      "country": "TW"
+    },
+    "region": "taiwan",
+    "announced": "2021-10-03",
+    "groundbreaking": "2023-11-25",
+    "notes": "Official temple page lists milestones: announced October 3, 2021; groundbreaking November 25, 2023.",
+    "officialUrl": "https://www.churchofjesuschrist.org/temples/details/kaohsiung-taiwan-temple?lang=eng"
+  },
+  {
+    "id": "hong-kong-china-temple",
+    "name": {
+      "en": "Hong Kong China Temple",
+      "zhTw": "香港中國聖殿"
+    },
+    "status": "operating",
+    "location": {
+      "lat": 22.33777,
+      "lng": 114.17803,
+      "address": "2 Cornwall Street, Kowloon Tong, Kowloon City, Hong Kong",
+      "city": "Hong Kong",
+      "state": "Hong Kong",
+      "country": "HK"
+    },
+    "region": "hong-kong",
+    "announced": "1992-10-03",
+    "groundbreaking": "1994-01-22",
+    "dedicated": "1996-05-26",
+    "rededicated": "2022-06-19",
+    "notes": "Official temple page lists milestones: announced October 3, 1992; dedicated May 26, 1996; rededicated June 19, 2022.",
+    "officialUrl": "https://www.churchofjesuschrist.org/temples/details/hong-kong-china-temple?lang=eng"
+  },
+  {
+    "id": "shanghai-china-temple",
+    "name": {
+      "en": "Shanghai China Temple",
+      "zhTw": "上海中國聖殿"
+    },
+    "status": "announced",
+    "location": {
+      "lat": 31.2397,
+      "lng": 121.4998,
+      "address": "City-level marker at the Oriental Pearl Tower, Shanghai",
+      "city": "Shanghai",
+      "state": "Shanghai",
+      "country": "CN"
+    },
+    "region": "china",
+    "announced": "2020-04-05",
+    "notes": "City-level marker only. The official temple page currently lists the temple as announced on April 5, 2020.",
+    "officialUrl": "https://www.churchofjesuschrist.org/temples/details/shanghai-people%E2%80%99s-republic-of-china-temple?lang=zho"
+  }
+]
