@@ -18,6 +18,7 @@ type BranchLocationGroup = {
 };
 
 const UNITED_STATES_CENTER: L.LatLngExpression = [39.5, -98.35];
+const SINGLE_BRANCH_MIN_ZOOM = 5;
 
 const popupCopy = {
   en: {
@@ -67,15 +68,34 @@ function createMarkerIcon(branches: Branch[]) {
   const color = markerGroupColor(branches);
   const count = branches.length;
   const countClass = count > 1 ? " is-grouped" : "";
+  const largeCountClass = count > 99 ? " is-large-group" : "";
   const label = count > 1 ? count.toString() : "";
+  const iconSize: L.PointTuple =
+    count > 99 ? [36, 28] : count > 1 ? [28, 28] : [24, 24];
 
   return L.divIcon({
-    className: `branch-marker${countClass}`,
+    className: `branch-marker${countClass}${largeCountClass}`,
     html: `<span style="background:${color}">${label}</span>`,
-    iconSize: [24, 24],
-    iconAnchor: [12, 12],
+    iconSize,
+    iconAnchor: [iconSize[0] / 2, iconSize[1] / 2],
     popupAnchor: [0, -12]
   });
+}
+
+function clusterDistanceForZoom(zoom: number) {
+  if (zoom < 5) {
+    return 92;
+  }
+
+  if (zoom < 8) {
+    return 58;
+  }
+
+  if (zoom < 12) {
+    return 34;
+  }
+
+  return 14;
 }
 
 function createTempleIcon(status: TempleStatus) {
@@ -271,10 +291,57 @@ function groupBranchesByLocation(branches: Branch[]) {
   return Array.from(groups.values());
 }
 
+function clusterBranchGroups(
+  map: L.Map,
+  groups: BranchLocationGroup[]
+): BranchLocationGroup[] {
+  const zoom = map.getZoom();
+  const maxDistance = clusterDistanceForZoom(zoom);
+  const clusters: BranchLocationGroup[] = [];
+
+  groups.forEach((group) => {
+    const point = map.latLngToLayerPoint([group.lat, group.lng]);
+    const matchingCluster = clusters.find((cluster) => {
+      const clusterPoint = map.latLngToLayerPoint([cluster.lat, cluster.lng]);
+      return point.distanceTo(clusterPoint) <= maxDistance;
+    });
+
+    if (!matchingCluster) {
+      clusters.push({
+        lat: group.lat,
+        lng: group.lng,
+        branches: [...group.branches]
+      });
+      return;
+    }
+
+    const currentWeight = matchingCluster.branches.length;
+    const nextWeight = group.branches.length;
+    const totalWeight = currentWeight + nextWeight;
+
+    matchingCluster.lat =
+      (matchingCluster.lat * currentWeight + group.lat * nextWeight) /
+      totalWeight;
+    matchingCluster.lng =
+      (matchingCluster.lng * currentWeight + group.lng * nextWeight) /
+      totalWeight;
+    matchingCluster.branches.push(...group.branches);
+  });
+
+  if (zoom < SINGLE_BRANCH_MIN_ZOOM) {
+    return clusters.filter((cluster) => cluster.branches.length > 1);
+  }
+
+  return clusters;
+}
+
 export function BranchMap({ branches, locale, temples }: BranchMapProps) {
   const mapElementRef = useRef<HTMLDivElement | null>(null);
   const mapRef = useRef<L.Map | null>(null);
-  const layerRef = useRef<L.LayerGroup | null>(null);
+  const branchLayerRef = useRef<L.LayerGroup | null>(null);
+  const templeLayerRef = useRef<L.LayerGroup | null>(null);
+  const branchGroupsRef = useRef<BranchLocationGroup[]>([]);
+  const localeRef = useRef<Locale>(locale);
 
   useEffect(() => {
     if (!mapElementRef.current || mapRef.current) {
@@ -293,51 +360,95 @@ export function BranchMap({ branches, locale, temples }: BranchMapProps) {
         '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
     }).addTo(map);
 
-    const layer = L.layerGroup().addTo(map);
+    map.createPane("templePane");
+    const templePane = map.getPane("templePane");
+
+    if (templePane) {
+      templePane.style.zIndex = "650";
+    }
+
+    const branchLayer = L.layerGroup().addTo(map);
+    const templeLayer = L.layerGroup().addTo(map);
     mapRef.current = map;
-    layerRef.current = layer;
+    branchLayerRef.current = branchLayer;
+    templeLayerRef.current = templeLayer;
+
+    const renderBranchLayer = () => {
+      branchLayer.clearLayers();
+
+      const clusteredGroups = clusterBranchGroups(map, branchGroupsRef.current);
+
+      clusteredGroups.forEach((group) => {
+        L.marker([group.lat, group.lng], {
+          icon: createMarkerIcon(group.branches),
+          keyboard: true,
+          riseOnHover: true,
+          title: group.branches.map((branch) => branch.name.en).join(", ")
+        })
+          .bindPopup(groupedPopupHtml(group, localeRef.current), {
+            closeButton: true,
+            maxWidth: 340
+          })
+          .addTo(branchLayer);
+      });
+    };
+
+    map.on("zoomend", renderBranchLayer);
 
     return () => {
+      map.off("zoomend", renderBranchLayer);
       map.remove();
       mapRef.current = null;
-      layerRef.current = null;
+      branchLayerRef.current = null;
+      templeLayerRef.current = null;
     };
   }, []);
 
   useEffect(() => {
     const map = mapRef.current;
-    const layer = layerRef.current;
+    const branchLayer = branchLayerRef.current;
+    const templeLayer = templeLayerRef.current;
 
-    if (!map || !layer) {
+    if (!map || !branchLayer || !templeLayer) {
       return;
     }
 
-    layer.clearLayers();
+    localeRef.current = locale;
+    branchGroupsRef.current = groupBranchesByLocation(branches);
 
-    const branchGroups = groupBranchesByLocation(branches);
+    branchLayer.clearLayers();
+    templeLayer.clearLayers();
 
-    branchGroups.forEach((group) => {
+    const clusteredGroups = clusterBranchGroups(map, branchGroupsRef.current);
+
+    clusteredGroups.forEach((group) => {
       L.marker([group.lat, group.lng], {
         icon: createMarkerIcon(group.branches),
+        keyboard: true,
+        riseOnHover: true,
         title: group.branches.map((branch) => branch.name.en).join(", ")
       })
         .bindPopup(groupedPopupHtml(group, locale), {
           closeButton: true,
           maxWidth: 340
         })
-        .addTo(layer);
+        .addTo(branchLayer);
     });
 
     temples.forEach((temple) => {
       L.marker([temple.location.lat, temple.location.lng], {
         icon: createTempleIcon(temple.status),
+        keyboard: true,
+        pane: "templePane",
+        riseOnHover: true,
+        zIndexOffset: 1000,
         title: temple.name.en
       })
         .bindPopup(templePopupHtml(temple, locale), {
           closeButton: true,
           maxWidth: 360
         })
-        .addTo(layer);
+        .addTo(templeLayer);
     });
 
     const boundsPoints = [
