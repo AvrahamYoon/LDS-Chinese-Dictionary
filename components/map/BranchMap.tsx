@@ -21,6 +21,7 @@ type BranchLocationGroup = {
 
 const UNITED_STATES_CENTER: L.LatLngExpression = [39.5, -98.35];
 const SINGLE_BRANCH_MIN_ZOOM = 5;
+const SPARSE_GROUP_LIMIT = 16;
 
 const popupCopy = {
   en: {
@@ -315,7 +316,7 @@ function clusterBranchGroups(
   groups: BranchLocationGroup[],
   expandDenseAreas: boolean
 ): BranchLocationGroup[] {
-  if (expandDenseAreas) {
+  if (expandDenseAreas || groups.length <= SPARSE_GROUP_LIMIT) {
     return groups;
   }
 

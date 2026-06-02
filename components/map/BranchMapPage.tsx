@@ -29,6 +29,11 @@ const initialFilters: BranchFilters = {
   region: "all"
 };
 
+const denseRegions = new Set<BranchFilters["region"]>([
+  "taiwan",
+  "hong-kong"
+]);
+
 const copy = {
   en: {
     eyebrow: "Global Directory",
@@ -122,7 +127,7 @@ export function BranchMapPage({
       <section className="map-canvas-wrap" aria-label="Map">
         <BranchMap
           branches={filteredBranches}
-          expandDenseAreas={filters.region !== "all"}
+          expandDenseAreas={denseRegions.has(filters.region)}
           locale={locale}
           temples={visibleTemples}
         />
