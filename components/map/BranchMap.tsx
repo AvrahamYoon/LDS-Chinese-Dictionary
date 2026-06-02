@@ -83,10 +83,14 @@ function createTempleIcon(status: TempleStatus) {
 
   return L.divIcon({
     className: `temple-marker${statusClass}`,
-    html: "<span>T</span>",
-    iconSize: [30, 30],
-    iconAnchor: [15, 15],
-    popupAnchor: [0, -14]
+    html: `
+      <span aria-hidden="true">
+        <i></i>
+      </span>
+    `,
+    iconSize: [34, 38],
+    iconAnchor: [17, 19],
+    popupAnchor: [0, -18]
   });
 }
 

@@ -310,25 +310,67 @@ h1 {
 }
 
 .temple-marker span {
-  display: grid;
-  place-items: center;
-  width: 28px;
-  height: 28px;
+  position: relative;
+  display: block;
+  width: 32px;
+  height: 32px;
   border: 3px solid white;
   border-radius: 50%;
   background: var(--accent);
-  color: white;
-  font-size: 0.78rem;
-  font-weight: 900;
   box-shadow: 0 2px 12px rgb(0 0 0 / 30%);
+}
+
+.temple-marker span::before {
+  position: absolute;
+  left: 8px;
+  top: 9px;
+  width: 16px;
+  height: 12px;
+  border-radius: 2px 2px 1px 1px;
+  background: white;
+  box-shadow:
+    inset 0 -3px 0 rgb(30 58 95 / 12%),
+    0 -7px 0 -4px white;
+  content: "";
+}
+
+.temple-marker span::after {
+  position: absolute;
+  left: 15px;
+  top: 3px;
+  width: 2px;
+  height: 15px;
+  border-radius: 999px;
+  background: white;
+  box-shadow: 0 -2px 0 white;
+  content: "";
+}
+
+.temple-marker span i {
+  position: absolute;
+  left: 6px;
+  top: 14px;
+  width: 20px;
+  height: 7px;
+  border-radius: 1px;
+  background:
+    linear-gradient(90deg, transparent 0 3px, rgb(30 58 95 / 18%) 3px 4px, transparent 4px 8px, rgb(30 58 95 / 18%) 8px 9px, transparent 9px 13px, rgb(30 58 95 / 18%) 13px 14px, transparent 14px),
+    white;
 }
 
 .temple-marker.temple-announced span {
   background: #7c3aed;
+  opacity: 0.88;
 }
 
 .temple-marker.temple-under-construction span {
   background: #b8841f;
+}
+
+.temple-marker.temple-announced span::before,
+.temple-marker.temple-announced span::after,
+.temple-marker.temple-announced span i {
+  opacity: 0.82;
 }
 
 .temple-popup dl {
